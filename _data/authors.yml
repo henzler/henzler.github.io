@@ -1,0 +1,122 @@
+phenzler:
+  first_name: Philipp
+  last_name: Henzler
+  website: https://henzler.github.io
+  is_me: true
+avedaldi:
+  first_name: Andrea
+  last_name: Vedaldi
+  website: https://www.robots.ox.ac.uk/~vedaldi/
+barron:
+  first_name: Jonathan
+  middle_name: T.
+  last_name: Barron
+  website: https://jonbarron.info
+bmild:
+  first_name: Ben
+  last_name: Mildenhall
+  website: https://bmild.github.io
+danielwatson:
+  first_name: Daniel
+  last_name: Watson
+  website: https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/
+ddobbelstein:
+  first_name: David
+  last_name: Dobbelstein
+  website: https://www.researchgate.net/profile/David-Dobbelstein
+dnovotny:
+  first_name: David 
+  last_name: Novotny
+  website: https://d-novotny.github.io/
+dorverbin:
+  first_name: Dor
+  last_name: Verbin
+  website: https://dorverbin.github.io
+erukzio:
+  first_name: Enrico
+  last_name: Rukzio
+  website: https://www.uni-ulm.de/in/mi/institut/personal/er/
+holynski:
+  first_name: Aleksander
+  last_name: Holynski
+  website: https://holynski.org
+kdietmayer:
+  first_name: Klaus
+  last_name: Dietmayer
+  website: https://de.linkedin.com/in/klaus-dietmayer-17b8692b
+keunhong:
+  first_name: Keunhong
+  last_name: Park
+  website: https://keunhong.com
+mbach:
+  first_name: Martin
+  last_name: Bach
+  website: https://www.linkedin.com/in/martin-bach-6033991a0
+nengel:
+  first_name: Nico
+  last_name: Engel
+  website: https://www.linkedin.com/in/nicoengel
+nmitra:
+  first_name: Niloy
+  middle_name: J.
+  last_name: Mitra
+  website: http://www0.cs.ucl.ac.uk/staff/n.mitra
+plabatut:
+  first_name: Patrick 
+  last_name: Labatut
+  website: https://www.linkedin.com/in/patricklabatut/?originalSubdomain=fr
+pooleb:
+  first_name: Ben
+  last_name: Poole
+  website: https://poolio.github.io
+pratuls:
+  first_name: Pratul
+  middle_name: P.
+  last_name: Srinivasan
+  website: https://pratulsrinivasan.github.io
+jreizenstein:
+  first_name: Jeremy
+  last_name: Reizenstein
+  website: https://www.facebook.com/jeremy.reizenstein
+rmbrualla:
+  first_name: Ricardo
+  last_name: Martin-Brualla
+  website: https://ricardomartinbrualla.com
+ruiqigao:
+  first_name: Ruiqi
+  last_name: Gao
+  website: https://ruiqigao.github.io
+rundiwu:
+  first_name: Rundi
+  last_name: Wu
+  website: https://www.cs.columbia.edu/~rundi/
+lsbodorne:
+  first_name: Luca
+  last_name: Sbodorne
+  website: https://www.linkedin.com/in/lucasbordone/
+rshapovalov:
+ first_name: Roman
+ last_name: Shapovalov
+ website: http://shapovalov.ro/
+shoermann:
+  first_name: Stefan
+  last_name: Hoermann
+  website: https://www.linkedin.com/in/stefan-h%F6rmann-1b2a1953
+tropinski:
+ first_name: Timo
+ last_name: Ropinski
+ website: https://www.uni-ulm.de/in/mi/institut/mitarbeiter/timo-ropinski
+tritschel:
+  first_name: Tobias
+  last_name: Ritschel
+  website: http://www.homepages.ucl.ac.uk/~ucactri/
+vdeschaintre:
+  first_name: Valentin
+  last_name: Deschaintre
+  website: https://valentin.deschaintre.fr
+vrasche:
+  first_name: Volker
+  last_name: Rasche
+  website: https://www.uni-ulm.de/einrichtungen/moman/geraetezentrum/forschungsteam/rasche/
+
+

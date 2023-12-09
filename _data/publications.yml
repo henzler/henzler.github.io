@@ -1,0 +1,158 @@
+- id: reconfusion
+  title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
+  venue: arXiv, 2023
+  project_page: https://reconfusion.github.io
+  arxiv: 2312.02981
+  image: reconfusion_before.png
+  image_mouseover: reconfusion_after.mp4
+  authors:
+    - rundiwu
+    - bmild
+    - phenzler
+    - keunhong
+    - ruiqigao
+    - danielwatson
+    - pratuls
+    - dorverbin
+    - barron
+    - pooleb
+    - holynski
+- id: camp
+  title: "CamP: Camera Preconditioning for Neural Radiance Fields"
+  venue: SIGGRAPH Asia, 2023
+  arxiv: 2308.10902
+  project_page: "https://camp-nerf.github.io"
+  image: camp_before.jpg
+  image_mouseover: camp_after.mp4
+  authors:
+    - keunhong
+    - phenzler
+    - bmild
+    - barron
+    - rmbrualla
+  awards:
+    - "Journal Paper"
+- id: thesis
+  title: "Self-Supervised Shape and Appearance Modeling via Neural Differentiable Graphics"
+  pdf: https://discovery.ucl.ac.uk/id/eprint/10169117/7/Henzler_10169117_Thesis_sig_removed.pdf
+  venue: University College London (UCL), PhD thesis, 2023
+  project_page: "https://discovery.ucl.ac.uk/id/eprint/10169117/"
+  image: thesis.jpg
+  authors:
+    - phenzler
+- id: co3d
+  title: "Common Objects in 3D: Large-Scale Learning and Evaluation of Real-life 3D Category Reconstruction"
+  venue: ICCV 2021
+  project_page: "https://ai.meta.com/datasets/CO3D-dataset/"
+  dataset: https://ai.meta.com/datasets/co3d-downloads/
+  arxiv: 2109.00512
+  pdf: https://openaccess.thecvf.com/content/ICCV2021/papers/Reizenstein_Common_Objects_in_3D_Large-Scale_Learning_and_Evaluation_of_Real-Life_ICCV_2021_paper.pdf
+  github: facebookresearch/co3d
+  image: co3d.jpg
+  awards: Oral, Best Paper Honorable Mention
+  authors:
+    - jreizenstein
+    - rshapovalov
+    - phenzler
+    - lsbodorne
+    - plabatut
+    - dnovotny
+- id: neuralmaterial
+  title: "Generative Modelling of BRDF Textures from Flash Images"
+  venue: SIGGRAPH ASIA 2021
+  code: https://github.com/henzler/neuralmaterial
+  dataset: https://drive.google.com/drive/folders/1uUTTyWGM75lkTP0RaawPTALD1eZZ-AXq?
+  arxiv: 2102.11861
+  image: neuralmaterial.jpg
+  awards: Journal
+  authors:
+    - phenzler
+    - vdeschaintre
+    - nmitra
+    - tritschel]
+- id: unsupervisedvideos
+  title: "Unsupervised Learning of 3D Object Categories from Videos in the Wild"
+  venue: CVPR 2021
+  pdf: https://openaccess.thecvf.com/content/CVPR2021/papers/Henzler_Unsupervised_Learning_of_3D_Object_Categories_From_Videos_in_the_CVPR_2021_paper.pdf
+  arxiv: 2103.16552
+  image: unsupervisedvideos.jpg
+  authors:
+    - phenzler
+    - jreizenstein
+    - plabatut
+    - rshapovalov
+    - tritschel
+    - avedaldi
+    - dnovotny
+- id: neuraltexture
+  title: "Learning a Neural 3D Texture Space from 2D Exemplars"
+  venue: CVPR 2020
+  pdf: https://openaccess.thecvf.com/content_CVPR_2020/papers/Henzler_Learning_a_Neural_3D_Texture_Space_From_2D_Exemplars_CVPR_2020_paper.pdf
+  project_page: https://geometry.cs.ucl.ac.uk/projects/2020/neuraltexture/
+  code: henzler/neuraltexture
+  dataset: https://drive.google.com/drive/folders/1uUTTyWGM75lkTP0RaawPTALD1eZZ-AXq?
+  arxiv: 2102.11861
+  image: neuraltexture.jpg
+  authors:
+    - phenzler
+    - nmitra
+    - tritschel  
+- id: platonicgan
+  title: "Escaping Plato's Cave: 3D Shape From Adversarial Rendering"
+  venue: ICCV 2019
+  pdf: https://openaccess.thecvf.com/content_ICCV_2019/papers/Henzler_Escaping_Platos_Cave_3D_Shape_From_Adversarial_Rendering_ICCV_2019_paper.pdf
+  arxiv: 1811.11606
+  project_page: https://geometry.cs.ucl.ac.uk/projects/2019/platonicgan/
+  github: henzler/platonicgan
+  image: platonicgan.jpg
+  authors:
+    - phenzler
+    - nmitra
+    - tritschel
+- id: objecttracking
+  title: "Deep Object Tracking on Dynamic Occupancy Grid Maps Using RNNs"
+  venue: ITSC 2018
+  pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8569234
+  image: objecttracking.png
+  authors:
+    - nengel
+    - shoermann
+    - phenzler
+    - kdietmayer
+- id: objectdetection
+  title: "Object Detection on Dynamic Occupancy Grid Maps Using Deep Learning and Automatic Label Generation"
+  venue: IV 2018
+  pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8500677
+  image: objectdetection.png
+  authors:
+    - shoermann
+    - phenzler
+    - mbach
+    - kdietmayer
+- id: tomography
+  title: "Single-Image Tomography: 3D Volumes from 2D Cranial X-Rays"
+  venue: Eurographics 2018
+  pdf: https://www.uni-ulm.de/fileadmin/website_uni_ulm/iui.inst.100/institut/Papers/viscom/2018/henzler18tomography_eg.pdf
+  github: henzler/single-image-tomography
+  image: tomography.png
+  authors:
+    - phenzler
+    - vrasche
+    - tropinski
+    - tritschel
+- id: pedestrian
+  title: "Unconstrained Pedestrian Navigationbased on Vibro-tactile Feedback around the Wristband of a Smartwatch"
+  venue: CHI 2016
+  pdf: https://dl.acm.org/citation.cfm?id=2892292
+  image: pedestrian.jpg
+  authors:
+    - ddobbelstein
+    - phenzler
+    - erukzio
+    
+
+    
+    
+
+
+
