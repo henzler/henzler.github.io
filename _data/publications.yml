@@ -1,6 +1,6 @@
 - id: reconfusion
   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
-  venue: arXiv, 2023
+  venue: CVPR, 2024
   project_page: https://reconfusion.github.io
   arxiv: 2312.02981
   image: reconfusion_before.png
