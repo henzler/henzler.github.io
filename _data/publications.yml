@@ -38,6 +38,7 @@
   venue: University College London (UCL), PhD thesis, 2023
   project_page: "https://discovery.ucl.ac.uk/id/eprint/10169117/"
   image: thesis.jpg
+  awards: Eurographics PhD Thesis Award
   authors:
     - phenzler
 - id: co3d
@@ -64,7 +65,7 @@
   dataset: https://drive.google.com/drive/folders/1uUTTyWGM75lkTP0RaawPTALD1eZZ-AXq?
   arxiv: 2102.11861
   image: neuralmaterial.jpg
-  awards: Journal
+  awards: "Journal Paper"
   authors:
     - phenzler
     - vdeschaintre
