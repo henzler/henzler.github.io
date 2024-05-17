@@ -1,3 +1,19 @@
+- id: cat3d
+  title: "CAT3D: Create Anything in 3D with Multi-View Diffusion Models"
+  venue: arXiv, 2024
+  project_page: https://cat3d.github.io
+  arxiv: 2405.10314
+  image: cat3d_before.jpg
+  image_mouseover: cat3d_after.mp4
+  authors:
+    - ruiqigao
+    - holynski
+    - phenzler
+    - arthurkb
+    - rmbrualla
+    - pratuls
+    - barron
+    - pooleb
 - id: reconfusion
   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
   venue: CVPR, 2024
