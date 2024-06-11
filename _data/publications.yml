@@ -1,3 +1,17 @@
+- id: illuminerf
+  title: "IllumiNeRF: 3D Relighting without Inverse Rendering"
+  venue: arXiv, 2024
+  project_page: https://illuminerf.github.io
+  arxiv: 2406.06527
+  image: illuminerf_before.jpg
+  image_mouseover: illuminerf_after.mp4
+  authors:
+    - xiaomingzhao
+    - pratuls
+    - dorverbin
+    - keunhong
+    - rmbrualla
+    - phenzler
 - id: cat3d
   title: "CAT3D: Create Anything in 3D with Multi-View Diffusion Models"
   venue: arXiv, 2024
