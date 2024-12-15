@@ -7,6 +7,10 @@ arthurkb:
   first_name: Arthur  
   last_name: Brussee
   website: https://www.linkedin.com/in/arthurbrussee/?originalSubdomain=uk
+atrevithick:
+  first_name: Alex
+  last_name: Trevithick
+  website: https://alextrevithick.github.io/simvs/
 avedaldi:
   first_name: Andrea
   last_name: Vedaldi
@@ -40,6 +44,10 @@ erukzio:
   first_name: Enrico
   last_name: Rukzio
   website: https://www.uni-ulm.de/in/mi/institut/personal/er/
+halzayer:
+  first_name: Hadi
+  last_name: Alzayer
+  website: https://hadizayer.github.io/
 holynski:
   first_name: Aleksander
   last_name: Holynski
@@ -82,6 +90,10 @@ jreizenstein:
   first_name: Jeremy
   last_name: Reizenstein
   website: https://www.facebook.com/jeremy.reizenstein
+raviramamoorthi:
+  first_name: Ravi
+  last_name: Ramamoorthi
+  website: https://cseweb.ucsd.edu/~ravir/
 rmbrualla:
   first_name: Ricardo
   last_name: Martin-Brualla
@@ -98,6 +110,10 @@ lsbodorne:
   first_name: Luca
   last_name: Sbodorne
   website: https://www.linkedin.com/in/lucasbordone/
+ronipaiss:
+  first_name: Roni
+  last_name: Paiss
+  website: https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en
 rshapovalov:
  first_name: Roman
  last_name: Shapovalov

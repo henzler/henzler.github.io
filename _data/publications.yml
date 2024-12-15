@@ -1,6 +1,26 @@
+- id: simvs
+  title: "SimVS: Simulating World Inconsistencies for Robust View Synthesis"
+  venue: arXiv, 2024
+  project_page: https://alextrevithick.github.io/simvs/
+  arxiv: 2412.07696
+  image: simvs_before.jpg
+  image_mouseover: simvs_after.mp4
+  authors:
+    - atrevithick
+    - ronipaiss
+    - phenzler
+    - dorverbin
+    - rundiwu
+    - halzayer
+    - ruiqigao
+    - pooleb
+    - barron
+    - holynski
+    - raviramamoorthi
+    - pratuls
 - id: illuminerf
   title: "IllumiNeRF: 3D Relighting without Inverse Rendering"
-  venue: arXiv, 2024
+  venue: NeurIPS, 2024
   project_page: https://illuminerf.github.io
   arxiv: 2406.06527
   image: illuminerf_before.jpg
@@ -14,7 +34,7 @@
     - phenzler
 - id: cat3d
   title: "CAT3D: Create Anything in 3D with Multi-View Diffusion Models"
-  venue: arXiv, 2024
+  venue: NeurIPS, 2024
   project_page: https://cat3d.github.io
   arxiv: 2405.10314
   image: cat3d_before.jpg
@@ -28,6 +48,8 @@
     - pratuls
     - barron
     - pooleb
+  awards:
+    - "Oral"
 - id: reconfusion
   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
   venue: CVPR, 2024
