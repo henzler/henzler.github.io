@@ -52,6 +52,10 @@ holynski:
   first_name: Aleksander
   last_name: Holynski
   website: https://holynski.org
+jasonyzhang:
+  first_name: Jason Y.
+  last_name: Zhang
+  website: https://jasonyzhang.com/
 kdietmayer:
   first_name: Klaus
   last_name: Dietmayer
@@ -114,6 +118,10 @@ ronipaiss:
   first_name: Roni
   last_name: Paiss
   website: https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en
+ruojincai:
+  first_name: Ruojin
+  last_name: Cai
+  website: https://www.cs.cornell.edu/~ruojin/
 rshapovalov:
  first_name: Roman
  last_name: Shapovalov
@@ -122,6 +130,10 @@ shoermann:
   first_name: Stefan
   last_name: Hoermann
   website: https://www.linkedin.com/in/stefan-h%F6rmann-1b2a1953
+snavely:
+  first_name: Noah
+  last_name: Snavely
+  website: https://www.cs.cornell.edu/~snavely/
 tropinski:
  first_name: Timo
  last_name: Ropinski
@@ -142,5 +154,9 @@ xiaomingzhao:
   first_name: Xiaoming
   last_name: Zhao
   website: https://xiaoming-zhao.com/
+zhengqili:
+  first_name: Zhengqi
+  last_name: Li
+  website: https://zhengqili.github.io/
 
 

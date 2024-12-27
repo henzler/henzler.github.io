@@ -1,3 +1,17 @@
+- id: interpose
+  title: Can Generative Video Models Help Pose Estimation?
+  venue: arXiv, 2024
+  project_page: https://inter-pose.github.io/
+  arxiv: 2412.16155
+  image: interpose_before.jpg
+  image_mouseover: interpose_after.mp4
+  authors:
+    - ruojincai
+    - jasonyzhang
+    - phenzler
+    - zhengqili
+    - snavely
+    - rmbrualla
 - id: simvs
   title: "SimVS: Simulating World Inconsistencies for Robust View Synthesis"
   venue: arXiv, 2024
