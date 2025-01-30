@@ -18,25 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Philipp Henzler
+title: PH
 name: Philipp Henzler
 position: Research Scientist 
 affiliation: Google
+university: University College London
+
 email: philipphenzler14@gmail.com
 description: >-
-  I am a Research Scientist at [Google](https://ai.google/). Prior to that I received my PhD from [University College London](http://www.ucl.ac.uk/)
-  under the supervision of [Tobias Ritschel](http://www.homepages.ucl.ac.uk/~ucactri/) and 
+
+  I am a researcher interested in generative 3D AI. At Google I work on [generating 3D assets](https://blog.google/products/shopping/search-on-2022-shopping/) for products on Google Search.
+
+  I received my PhD from [University College London](http://www.ucl.ac.uk/)
+  supervised by [Tobias Ritschel](http://www.homepages.ucl.ac.uk/~ucactri/) and 
   [Niloy J. Mitra](http://www0.cs.ucl.ac.uk/staff/n.mitra/).
 
-
-  During my PhD, I interned at [Facebook AI Research (FAIR)](https://ai.facebook.com/), 
-  working with [David Novotny](http://d-novotny.github.io) and [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi//) and at [Adobe Research](https://research.adobe.com/) supervised by [Milos Hasan](http://www.miloshasan.net) and [Kalyan Sunkavalli](http://www.kalyans.org). 
-
-
-  I completed a BSc and MSc in Media Informatics at Ulm University, where I was supervised by [Timo Ropinski](http://www.uni-ulm.de/in/mi/institut/mitarbeiter/timo-ropinski/).
-
-
-  My research interests lie at the intersection of 3D computer vision, computer graphics and machine learning.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://henzler.github.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: philipphenzler

@@ -6,8 +6,10 @@ layout: null
 
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>{{ site.name }}</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -21,9 +23,7 @@ layout: null
     gtag('config', '{{ site.google_analytics }}');
   </script>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
@@ -37,14 +37,16 @@ layout: null
 <body>
 
   <section class="hero">
-    <div class="hero-body container is-max-desktop pb-1">
+    <div class="hero-body container is-max-desktop">
       <div class="columns is-vcentered">
         <div class="column is-7 has-text-centered">
-          <h1 class="title">{{ site.name }}</h1>
-          <h4 class="subtitle mb-0">
-            {{ site.position }}, {{ site.affiliation }}
-          </h4>
-          <div class="buttons is-centered mb-0">
+          <h1 class="title">
+            <b>{{ site.name }}</b>
+          </h1>
+          <div class="content has-text-justified">
+            {{ site.description | markdownify }}
+          </div>
+          <div class="buttons is-centered">
             <a class="external-link button is-white is-medium" href="{{site.cv}}">
               <span class="icon"><i class="ai ai-cv"></i></span>
             </a>
@@ -65,36 +67,37 @@ layout: null
               <span class="icon"><i class="fab fa-twitter"></i></span>
             </a>
           </div>
-          <div class="content has-text-justified">
-            {{ site.description | markdownify }}
-          </div>
         </div>
-        
         <div class="column is-1"></div>
         <div class="column is-4 has-text-centered">
-          <div class="block">
-            <figure class="image"><img class="is-rounded is-128x128"
-                src="{{ '/images/portrait.jpg' | relative_url }}" /></figure>
-          </div>
+            <div class="block">
+              <figure class="image"><img class="is-rounded is-128x128" src="{{ '/images/portrait.jpg' | relative_url }}" /></figure>
+            </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <hr class="custom-hr">
 
+  <section class="section">
+  
+  <hr>
 
-  <div class="container is-max-desktop" id="section-button-container">
-    <div class="buttons is-centered" id="section-buttons">
-      <button class="button section-button is-size-3 has-text-weight-bold" data-section="research">Research</button>
-      <button class="button section-button is-size-3 has-text-weight-bold" data-section="projects">Projects</button>
-      <button class="button section-button is-size-3 has-text-weight-bold" data-section="cv">CV</button>
-    </div>
-  </div>
-
-
-  <section class="section content-section" id="research-section">
+  <section class="section">
     <div class="container is-max-desktop">
+
+      <!--<h2 class="title is-3">News</h2>
+      <div class="content">
+        <ul>
+          {% for news in site.data.news %}
+          <li>
+            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>-->
+
       <h2 class="title is-3">Research</h2>
 
       {% for publication in site.data.publications %}
@@ -102,7 +105,7 @@ layout: null
 
         <div class="column is-2">
           <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
-            {% if publication.image_mouseover contains 'mp4' %}
+            {% if publication.image_mouseover contains "mp4" %}
             <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
               <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
               Your browser does not support the video tag.
@@ -137,10 +140,11 @@ layout: null
             <div class="publication-venue">
               <span>{{ publication.venue }}</span>
               {% for award in publication.awards %}
-              <span class="publication-venue-emph">{{ award }}<span>
-                  {% endfor %}
+                <span class="publication-venue-emph">{{ award }}<span>
+              {% endfor %}
             </div>
             <p class="publication-description">{{ publication.description }}</p>
+            <!-- Publication Links. -->
             <div class="publication-links buttons field has-addons">
               {% if publication.project_page %}
               <a class="external-link button is-small" href="{{ publication.project_page }}">
@@ -168,65 +172,20 @@ layout: null
               </a>
               {% endif %}
             </div>
-            </div>
+            <!--/ Publication Links. -->
+          </div>
         </div>
       </div>
       {% endfor %}
     </div>
-  </section>
 
-  <section class="section content-section" id="projects-section" style="display: none;">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Projects</h2>
-      <div class="content">
-        <p> Projects will be added here </p>
-      </div>
+    <div class="column has-text-right">
+          <p>
+            This template is borrowed from <a href="https://github.com/keunhong/keunhong.github.io">Keunhong Park</a>.
+          </p>
     </div>
+    
   </section>
-
-  <section class="section content-section" id="cv-section" style="display: none;">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">CV</h2>
-      <div class="content">
-        <p> CV will be added here </p>
-      </div>
-    </div>
-  </section>
-
-  <div class="column has-text-right">
-    <p>
-      This template is borrowed from <a href="https://github.com/keunhong/keunhong.github.io">Keunhong Park</a>.
-    </p>
-  </div>
-
-</section>
-
-<script>
-  $(document).ready(function () {
-    // Initially hide all content sections except the Research section
-    $('.content-section').hide();
-    $('#research-section').show();
-
-    // Initially activate the Research button
-    $('.section-button[data-section="research"]').addClass('is-active');
-
-    $('.section-button').click(function () {
-      // Deactivate all buttons
-      $('.section-button').removeClass('is-active');
-
-      // Activate the clicked button
-      $(this).addClass('is-active');
-
-      // Hide all content sections
-      $('.content-section').hide();
-
-      // Show the corresponding section
-      var sectionId = $(this).data('section') + '-section';
-      $('#' + sectionId).show();
-    });
-  });
-</script>
-
 </body>
 
 </html>
