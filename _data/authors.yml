@@ -44,6 +44,10 @@ erukzio:
   first_name: Enrico
   last_name: Rukzio
   website: https://www.uni-ulm.de/in/mi/institut/personal/er/
+fabianmanhardt:
+  first_name: Fabian
+  last_name: Manhardt
+  website: https://scholar.google.de/citations?user=bERItx8AAAAJ&hl=de
 halzayer:
   first_name: Hadi
   last_name: Alzayer
@@ -56,6 +60,10 @@ jasonyzhang:
   first_name: Jason Y.
   last_name: Zhang
   website: https://jasonyzhang.com/
+jiabinhuang:
+ first_name: Jia-Bin
+ last_name: Huang
+ website: https://jbhuang0604.github.io/
 kdietmayer:
   first_name: Klaus
   last_name: Dietmayer
@@ -64,14 +72,26 @@ keunhong:
   first_name: Keunhong
   last_name: Park
   website: https://keunhong.com
+konradschindler:
+  first_name: Konrad
+  last_name: Schindler
+  website: https://prs.igp.ethz.ch/group/people/person-detail.schindler.html/www.cv-foundation.org/www.cv-foundation.org/
 mbach:
   first_name: Martin
   last_name: Bach
   website: https://www.linkedin.com/in/martin-bach-6033991a0
+moechsle:
+  first_name: Michael
+  last_name: Oechsle
+  website: https://moechsle.github.io/
 nengel:
   first_name: Nico
   last_name: Engel
   website: https://www.linkedin.com/in/nicoengel
+nkali:
+  first_name: Nikolai
+  last_name: Kalischeck
+  website: https://www.linkedin.com/in/nikolai-kalischek/
 nmitra:
   first_name: Niloy
   middle_name: J.
@@ -134,6 +154,10 @@ snavely:
   first_name: Noah
   last_name: Snavely
   website: https://www.cs.cornell.edu/~snavely/
+tombari:
+  first_name: Federico
+  last_name: Tombari
+  website: https://federicotombari.github.io/
 tropinski:
  first_name: Timo
  last_name: Ropinski
