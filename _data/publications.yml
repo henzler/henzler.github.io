@@ -1,3 +1,31 @@
+- id: cubediff
+  title: "CubeDiff: Repurposing Diffusion-Based Image Models for Panorama Generation"
+  venue: ICLR, 2025
+  project_page: https://cubediff.github.io/
+  arxiv: 2501.17162
+  image: cubediff_before.jpg
+  image_mouseover: cubediff_after.mp4
+  authors:
+    - nkali
+    - moechsle
+    - fabianmanhardt
+    - phenzler
+    - konradschindler
+    - tombari
+- id: generative-relighting
+  title: Generative Multiview Relighting for 3D Reconstruction under Extreme Illumination Variation
+  venue: arXiv, 2024
+  project_page: https://relight-to-reconstruct.github.io/
+  arxiv: 2412.15211
+  image: generative-relighting_before.jpg
+  image_mouseover: generative-relighting_after.mp4
+  authors:
+    - halzayer
+    - phenzler
+    - barron
+    - jiabinhuang
+    - pratuls
+    - dorverbin
 - id: interpose
   title: Can Generative Video Models Help Pose Estimation?
   venue: arXiv, 2024
