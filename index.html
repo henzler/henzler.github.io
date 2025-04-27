@@ -24,13 +24,13 @@ layout: null
   <link
     href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/fontawesome/css/all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/fontawesome/js/all.min.js' | relative_url }}"></script>
   <script src="{{ '/js/index.js' | relative_url }}"></script>
 </head>
 
@@ -45,7 +45,8 @@ layout: null
             {{ site.position }}, {{ site.affiliation }}
           </h4>
           <div class="buttons is-centered mb-0">
-            <a class="external-link button is-white is-medium" href="{{site.cv}}">
+            <!-- <a class="external-link button is-white is-medium" href="cv.html"> -->
+            <a class="external-link button is-white is-medium" href="images/Henzler_CV.pdf"></a>
               <span class="icon"><i class="ai ai-cv"></i></span>
             </a>
             <a class="external-link button is-white is-medium" href="mailto:{{site.email}}">
@@ -84,13 +85,13 @@ layout: null
   <hr class="custom-hr">
 
 
-  <div class="container is-max-desktop" id="section-button-container">
+  <!-- <div class="container is-max-desktop" id="section-button-container">
     <div class="buttons is-centered" id="section-buttons">
       <button class="button section-button is-size-3 has-text-weight-bold" data-section="research">Research</button>
       <button class="button section-button is-size-3 has-text-weight-bold" data-section="projects">Projects</button>
       <button class="button section-button is-size-3 has-text-weight-bold" data-section="cv">CV</button>
     </div>
-  </div>
+  </div> -->
 
 
   <section class="section content-section" id="research-section">
@@ -201,7 +202,7 @@ layout: null
 
 </section>
 
-<script>
+<!-- <script>
   $(document).ready(function () {
     // Initially hide all content sections except the Research section
     $('.content-section').hide();
@@ -225,7 +226,7 @@ layout: null
       $('#' + sectionId).show();
     });
   });
-</script>
+</script> -->
 
 </body>
 

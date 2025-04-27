@@ -24,28 +24,39 @@ layout: null
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link href="./css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="./fontawesome/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="./css/bulma.min.css" rel="stylesheet">
   <link href="./css/cv.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="./js/fontawesome.all.min.js"></script>
+  <!-- <script defer src="./fontawesome/js/all.min.js"></script> -->
+  <script defer src="{{ '/fontawesome/js/all.min.js' | relative_url }}"></script>
+  <!-- <script defer src="{{ '/js/html2pdf.bundle.min.js' | relative_url }}"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="{{ '/js/cv.js' | relative_url }}"></script>
 </head>
 
-<body>
+<body id="cv-content">
 
-  <section>
+  <!-- <img src="./fontawesome/svgs/brands/google.svg" alt="Icon" width="24" height="24"> -->
+
+  <section class="has-text-black">
     <div class="container is-max-desktop">
-      <div class="columns is-vcentered">
+      <div class="columns is-vcentered is-tablet">
         <div class="column">
-          <h1 class="title is-2">{{ site.name }}</h1>
-          <h1 class="subtitle is-5">{{ site.position }}</h1>
+          <h3 class="title is-3 has-text-centered-mobile">{{ site.name }}</h3>
+          <h5 class="subtitle is-5 has-text-centered-mobile">{{ site.position }}</h5>
+          <button id="save-pdf-button" class="button is-small" data-html2canvas-ignore="true">Download CV</button>
+
         </div>
-        <div class="column is-narrow portrait-column">
-          <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Keunhong Park" />
+        <!-- <div class="column is-narrow portrait-column has-text-centered-mobile" data-html2canvas-ignore="true"> -->
+        <div class="column is-narrow portrait-column has-text-centered-mobile">
+          <!-- <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Philipp Henzler" /> -->
+          <img class="portrait-image" src="./fontawesome/svgs/brands/google.svg" width="200", height="100" alt="A portrait of Philipp Henzler" />
         </div>
-        <div class="column has-text-right">
+        <div class="column has-text-right-tablet has-text-centered-mobile">
           <p>
             <a href="{{ site.url }}">
               <i class="fas fa-home"></i>
@@ -74,67 +85,99 @@ layout: null
         </div>
       </div>
 
+        
       <div class="content">
-        <h2>Education</h2>
+        <h5 class="title is-5">Education</h5>
         {% for school in site.data.education %}
         <div class="columns">
-          <div class="column is-four-fifths">
-            <b>{{ school.name }}</b><br />
-            {{ school.description }}
+          <div class="column is-three-fifths pt-0 pb-0">
+            <b>{{ school.name }}</b>
           </div>
-          <div class="column is-one-fifths has-text-right">
+          <div class="column is-two-fifths pb-0 pt-0 has-text-right-tablet">
             {{ school.dates }}
           </div>
         </div>
-        {% endfor %}
-
-        <h2>Employment</h2>
-
-        {% for job in site.data.employment %}
         <div class="columns">
-          <div class="column is-four-fifths">
-            <b>{{ job.company }}</b><br />
-            {{ job.description }}
-          </div>
-          <div class="column is-one-fifths has-text-right">
-            {{ job.dates }}
-            <br />
-            {{ job.location }}
-          </div>
+          <div class="column">
+            {{ school.description }}
+          </div>  
         </div>
         {% endfor %}
 
-        <h2>Publications</h2>
-
+        <h5 class="title is-5 mb-4 mt-3">Employment</h5>
+        {% for job in site.data.employment %}
+          <h6> {% if job.fa-icon %} <i class="fa-brands fa-{{job.fa-icon}}"></i> {% endif %} {{ job.company }}</h6>
+          {% for role in job.roles %}
+          <div class="columns pl-2 is-tablet is-multiline pt-0 pl-0">
+            <div class="column is-two-fifths pt-0 pb-0">
+              <b class="is-hidden-tablet">{{ role.description }}</b>
+              <p class="is-hidden-mobile">{{ role.description }}</p>
+            </div>
+            <div class="column has-text-right-tablet pt-0 pb-0">
+              {{ role.location }}
+            </div>
+            <div class="column has-text-right-tablet pt-0">
+              {{ role.dates }}
+            </div>
+          </div>
+          {% endfor %}
+        {% endfor %}
+          
+        <h5 class="title is-5 mb-3 mt-3">Awards</h5>
+        {% for award in site.data.awards %}
+        <div class="columns">
+          <div class="column pb-1">
+            {{ award.name }}, {{award.year}}
+          </div>
+        </div>
+        {% endfor %}
+          
+        <h5 class="title is-5 mb-3 mt-5">Publications</h5>
         {% for publication in site.data.publications %}
         <div class="columns">
-          <div class="column is-four-fifths">
-            <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
+          <div class="column">
+            <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>  
+            <div>
+              {{ publication.venue }} 
+              {% if publication.project_page %}
+              <a class="external-link" href="https://arxiv.org/abs/{{ publication.project_page }}">
+                <i class="fas fa-globe"></i>
+              </a>
+              {% endif %}
+              {% if publication.arxiv %}
+              <a class="external-link" href="https://arxiv.org/abs/{{ publication.arxiv }}">
+                <i class="fas fa-file"></i>
+              </a>
+              {% endif %}
+            </div>
             <div class="publication-authors">
               {% for author_id in publication.authors %}
               {% assign author = site.data.authors[author_id] %}
               <span class="author-block {% if author.is_me %}author-me{% endif %}">
                 {% if author.is_me %}
-                {{ author.first_name | slice: 0 }}. {{ author.last_name }}{% if forloop.last == false %},{%
+                {{ author.first_name | slice: 0 }}. {% if author.middle_name %} {{ author.middle_name | slice: 0 }}. {% endif %} {{ author.last_name }}{% if forloop.last == false %},{%
                 endif %}
                 {% else %}
-                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}</a>{% if
+                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {% if author.middle_name %} {{ author.middle_name | slice: 0 }}. {% endif %} {{ author.last_name }}</a>{% if
                 forloop.last == false %},{% endif %}
                 {% endif %}
               </span>
               {% endfor %}
             </div>
-            {{ publication.description }}
           </div>
-          <div class="column is-one-fifths has-text-right">
-            {{ publication.venue }}
+        </div>
+        {% endfor %}
+
+        <h5 class="title is-5 mb-3 mt-3">Professional Service</h5>
+        {% for service in site.data.service %}
+        <div class="columns">
+          <div class="column pb-1">
+            {{ service.text }}</p>
           </div>
         </div>
         {% endfor %}
       </div>
     </div>
   </section>
-
 </body>
-
 </html>

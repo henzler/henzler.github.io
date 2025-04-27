@@ -1,0 +1,39 @@
+---
+---
+
+@import "base";
+
+
+body {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: "Noto Sans", sans-serif;
+}
+
+a {
+    color: #000;
+}
+
+.portrait-column {
+    padding: 0;
+}
+
+.portrait-image {
+    border-radius: 50%;
+    max-width: 7em;
+}
+
+.columns {
+    margin-bottom: 0 !important;
+}
+
+@media print {
+    // html, body {
+        // height: auto;
+        // font-size: 9pt; /* changing to 10pt has no impact */
+    // }
+    
+    .portrait-column {
+        display:none;
+    }
+}

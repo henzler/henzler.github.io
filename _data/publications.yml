@@ -1,3 +1,20 @@
+- id: bolt3d
+  title: "Bolt3D: Generating 3D Scenes in Seconds"
+  venue: arXiv, 2025
+  arxiv: 2503.14445
+  project_page: https://szymanowiczs.github.io/bolt3d
+  image: bolt3d_before.png
+  video: bolt3d_after.mp4
+  authors:
+    - stanszy
+    - jasonyzhang
+    - pratuls
+    - ruiqigao
+    - arthurkb
+    - holynski
+    - rmbrualla
+    - barron
+    - phenzler
 - id: cubediff
   title: "CubeDiff: Repurposing Diffusion-Based Image Models for Panorama Generation"
   venue: ICLR, 2025
@@ -12,6 +29,8 @@
     - phenzler
     - konradschindler
     - tombari
+  awards:
+    - "Spotlight"
 - id: generative-relighting
   title: Generative Multiview Relighting for 3D Reconstruction under Extreme Illumination Variation
   venue: arXiv, 2024
@@ -26,6 +45,8 @@
     - jiabinhuang
     - pratuls
     - dorverbin
+  awards:
+    - "Highlight"
 - id: interpose
   title: Can Generative Video Models Help Pose Estimation?
   venue: arXiv, 2024
@@ -40,6 +61,8 @@
     - zhengqili
     - snavely
     - rmbrualla
+  awards:
+    - "Highlight"
 - id: simvs
   title: "SimVS: Simulating World Inconsistencies for Robust View Synthesis"
   venue: arXiv, 2024
