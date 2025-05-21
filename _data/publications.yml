@@ -1,3 +1,11 @@
+- id: veo2_controls
+  title: Veo2 controls / Flow
+  project_page: https://flow.google
+  venue: 2025
+  image: veo2_controls_before.png
+  image_mouseover: veo2_controls_after.mp4
+  authors: 
+    - veo_team
 - id: bolt3d
   title: "Bolt3D: Generating 3D Scenes in Seconds"
   venue: arXiv, 2025
