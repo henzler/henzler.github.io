@@ -175,8 +175,11 @@ vdeschaintre:
   last_name: Deschaintre
   website: https://valentin.deschaintre.fr
 veo_team:
-  first_name: Veo team and collaborators
+  first_name: Veo team and collaborators at Google DeepMind
   website: https://deepmind.google/models/veo/
+maya_team:
+  first_name: Team and collaborators at Google
+  website: https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/ 
 vrasche:
   first_name: Volker
   last_name: Rasche

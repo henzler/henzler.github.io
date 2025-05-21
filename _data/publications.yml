@@ -6,6 +6,14 @@
   image_mouseover: veo2_controls_after.mp4
   authors: 
     - veo_team
+- id: spins
+  title: 3D shoppable products
+  project_page: https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/ 
+  venue: 2022-2025
+  image: spins_before.png
+  image_mouseover: spins_after.mp4
+  authors:
+    - maya_team
 - id: bolt3d
   title: "Bolt3D: Generating 3D Scenes in Seconds"
   venue: arXiv, 2025
