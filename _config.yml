@@ -33,7 +33,7 @@ description: >-
   
   I received my BSc and MSc from Ulm University in Germany where I am originally from.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://henzler.github.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://henzler.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: philipphenzler
 github_username: henzler
 google_scholar: HVfoUYMAAAAJ
