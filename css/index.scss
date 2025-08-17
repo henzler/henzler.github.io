@@ -1,11 +1,8 @@
 ---
 ---
 
-@import "base";
-
-.title {
-    font-family: 'Google Sans';
-    font-weight: 700;
+body {
+    font-family: "Google Sans", "Noto Sans", sans-serif;
 }
 
 .portrait {
@@ -15,50 +12,28 @@
     img { transform: scale(1.2); }
 }
 
-.footer .footer-links a {
-    font-size: 12px;
-    color: #000;
-}
-
 .publication-block {
     .publication-title {
         width: fit-content;
         margin: 0 !important;
-        font-weight: 600;
-        font-size: 110% !important;
 
-        a { color: #000 }
+        // a { color: #000 }
     }
 
     .publication-venue {
-        color: #555;
         width: fit-content;
         margin-top: 0;
     }
 
-    .publication-venue-emph {
-        font-style: normal;
-        font-size: 80%;
-        font-weight: 500;
-        color: firebrick;
-        padding-left: 0.25em;
-    }
-
-    .publication-awards {
-        color: firebrick;
-        width: fit-content;
-        font-weight: bolder;
-    }
-
     .publication-authors {
         .author-me {
-            color: #000;
+            // color: #000;
             font-weight: 600;
         }
 
-        a {
-            color: #000 !important;
-        }
+        // a {
+        //     color: #000 !important;
+        // }
 
         a:hover {
             text-decoration: underline;
@@ -80,9 +55,6 @@
     .publication-mousecell {
         position: relative;
         font-size: 0;
-    }
-
-    .publication-mousecell {
         width: 100%;
         height: 100%;
         display: inline-block;
@@ -93,13 +65,8 @@
         }
     }
 
-    .publication-description {
-        color: #333;
-        margin: 0.5em 0;
-    }
-
-    .publication-links {
-        margin: 0 !important;
-        margin-top: 0.5em !important;
-    }
+    // .publication-links {
+    //     margin: 0 !important;
+    //     margin-top: 0.5em !important;
+    // }
 }

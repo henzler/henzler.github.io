@@ -1,0 +1,99 @@
+/* Bulma Color Overrides */
+:root {
+  /* Primary Colors */
+  --bulma-primary: #FF7F50;
+  --bulma-primary-invert: #fff;
+  
+  /* Secondary Colors */
+  --bulma-info: #3298dc;
+  --bulma-info-invert: #fff;
+  
+  --bulma-success: #48c774;
+  --bulma-success-invert: #fff;
+  
+  --bulma-warning: #ffdd57;
+  --bulma-warning-invert: rgba(0, 0, 0, 0.7);
+  
+  --bulma-danger: #f14668;
+  --bulma-danger-invert: #fff;
+  
+  /* Neutral Colors */
+  --bulma-dark: #363636;
+  --bulma-dark-invert: #fff;
+  
+  --bulma-light: #f5f5f5;
+  --bulma-light-invert: rgba(0, 0, 0, 0.7);
+  
+  /* Gray Scale */
+  --bulma-white: #fff;
+  --bulma-black: #0a0a0a;
+  --bulma-grey-darker: #121212;
+  --bulma-grey-dark: #363636;
+  --bulma-grey: #7a7a7a;
+  --bulma-grey-light: #b5b5b5;
+  --bulma-grey-lighter: #dbdbdb;
+  --bulma-white-ter: #f5f5f5;
+  --bulma-white-bis: #fafafa;
+}
+
+/* Override Bulma's color classes to use custom properties */
+.has-text-primary { color: var(--bulma-primary) !important; }
+.has-text-info { color: var(--bulma-info) !important; }
+.has-text-success { color: var(--bulma-success) !important; }
+.has-text-warning { color: var(--bulma-warning) !important; }
+.has-text-danger { color: var(--bulma-danger) !important; }
+.has-text-dark { color: var(--bulma-dark) !important; }
+.has-text-light { color: var(--bulma-light) !important; }
+.has-text-white { color: var(--bulma-white) !important; }
+.has-text-black { color: var(--bulma-black) !important; }
+.has-text-grey { color: var(--bulma-grey) !important; }
+.has-text-grey-light { color: var(--bulma-grey-light) !important; }
+.has-text-grey-dark { color: var(--bulma-grey-dark) !important; }
+
+/* Background color classes */
+.has-background-primary { background-color: var(--bulma-primary) !important; }
+.has-background-info { background-color: var(--bulma-info) !important; }
+.has-background-success { background-color: var(--bulma-success) !important; }
+.has-background-warning { background-color: var(--bulma-warning) !important; }
+.has-background-danger { background-color: var(--bulma-danger) !important; }
+.has-background-dark { background-color: var(--bulma-dark) !important; }
+.has-background-light { background-color: var(--bulma-light) !important; }
+
+/* Button color overrides */
+.button.is-primary { 
+  background-color: var(--bulma-primary) !important; 
+  border-color: var(--bulma-primary) !important;
+  color: var(--bulma-primary-invert) !important;
+}
+.button.is-info { 
+  background-color: var(--bulma-info) !important; 
+  border-color: var(--bulma-info) !important;
+  color: var(--bulma-info-invert) !important;
+}
+.button.is-success { 
+  background-color: var(--bulma-success) !important; 
+  border-color: var(--bulma-success) !important;
+  color: var(--bulma-success-invert) !important;
+}
+.button.is-warning { 
+  background-color: var(--bulma-warning) !important; 
+  border-color: var(--bulma-warning) !important;
+  color: var(--bulma-warning-invert) !important;
+}
+.button.is-danger { 
+  background-color: var(--bulma-danger) !important; 
+  border-color: var(--bulma-danger) !important;
+  color: var(--bulma-danger-invert) !important;
+}
+
+/* Make links inherit text color from parent element */
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+

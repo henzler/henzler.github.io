@@ -6,8 +6,7 @@
   image: veo2_controls_before.png
   image_mouseover: veo2_controls_after.mp4
   description: "Google DeepMind's state-of-the-art generative video model."
-  team: 
-    - veo_team
+  team: veo_team
 - id: spins
   title: 3D Shoppable Products
   product_name: Google Search
@@ -16,5 +15,4 @@
   image: spins_before.png
   image_mouseover: spins_after.mp4
   description: "AI-generated 360-degree spins of products."
-  team:
-    - maya_team
+  team: maya_team

@@ -21,12 +21,11 @@ layout: null
     gtag('config', '{{ site.google_analytics }}');
   </script>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link href="{{ '/fontawesome/css/all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/bulma-overrides.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -39,14 +38,13 @@ layout: null
   <section class="hero">
     <div class="hero-body container is-max-desktop pb-1">
       <div class="columns is-vcentered">
-        <div class="column is-7 has-text-centered">
-          <h1 class="title">{{ site.name }}</h1>
+        <div class="column has-text-centered">
+          <h1 class="title is-1">{{ site.name }}</h1>
           <h4 class="subtitle mb-0">
             {{ site.position }}, {{ site.affiliation }}
           </h4>
           <div class="buttons is-centered mb-0">
             <a class="external-link button is-white is-medium" href="cv.html">
-            <!-- <a class="external-link button is-white is-medium" href="images/Henzler_CV.pdf"> -->
               <span class="icon"><i class="ai ai-cv"></i></span>
             </a>
 
@@ -85,10 +83,9 @@ layout: null
 
   <hr class="custom-hr">
 
-
   <section class="section content-section pb-0" id="product-impact-section">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Product Impact</h2>
+      <h3 class="title is-3">Product Impact</h3>
 
       {% for impact in site.data.product_impact %}
       <div class="publication-block columns">
@@ -108,32 +105,24 @@ layout: null
         <div class="column">
           <div class="content">
             {% if impact.project_page %}
-            <h3 class="publication-title"><a href="{{ impact.project_page }}">{{ impact.title }}</a></h3>
+            <h3 class="has-text-weight-semibold is-size-5 has-text-dark mb-0"><a href="{{ impact.project_page }}">{{ impact.title }}</a></h3>
             {% else %}
-            <h3 class="publication-title">{{ impact.title }}</h3>
+            <h3 class="has-text-weight-semibold is-size-5 has-text-dark mb-0">{{ impact.title }}</h3>
             {% endif %}
 
-            <div class="publication-authors">
-              {% for team_id in impact.team %}
-              {% assign team = site.data.authors[team_id] %}
+            <div class="">
+              {% assign team = site.data.authors[impact.team] %}
               <span class="author-block {% if team.is_me %}author-me{% endif %}">
-                {% if team.is_me %}
-                {{ team.first_name }} {{team.middle_name}} {{ team.last_name }}{% if forloop.last == false %},{%
-                endif %}
-                {% else %}
-                <a href="{{ team.website }}">{{ team.first_name }} {{ team.middle_name }} {{ team.last_name
-                  }}</a>{% if forloop.last == false %},{% endif %}
-                {% endif %}
+                {{ team.first_name }} {{team.middle_name}} {{ team.last_name }}
               </span>
-              {% endfor %}
             </div>
-            <div class="publication-venue">
+            <div class="has-text-grey">
               <span>{{ impact.product_name }}, {{ impact.date }}</span>
               {% for award in impact.awards %}
-              <span class="publication-venue-emph">{{ award }}<span>
+              <span class="has-text-danger has-text-weight-medium is-size-7 pl-1">{{ award }}</span>
                   {% endfor %}
             </div>
-            <div class="publication-links buttons field has-addons">
+            <div class="pt-1 buttons field has-addons">
               {% if impact.project_page %}
               <a class="external-link button is-small" href="{{ impact.project_page }}">
                 <span>Project page</span>
@@ -149,7 +138,7 @@ layout: null
 
   <section class="section content-section" id="research-section">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Research</h2>
+      <h3 class="title is-3">Research</h3>
 
       {% for publication in site.data.publications %}
       <div class="publication-block columns">
@@ -169,18 +158,17 @@ layout: null
         <div class="column">
           <div class="content">
             {% if publication.project_page %}
-            <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
+            <h3 class="has-text-weight-semibold is-size-5 has-text-dark mb-0"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
             {% else %}
-            <h3 class="publication-title">{{ publication.title }}</h3>
+            <h3 class="has-text-weight-semibold is-size-5 has-text-dark mb-0">{{ publication.title }}</h3>
             {% endif %}
 
-            <div class="publication-authors">
+            <div class>
               {% for author_id in publication.authors %}
               {% assign author = site.data.authors[author_id] %}
               <span class="author-block {% if author.is_me %}author-me{% endif %}">
                 {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
+                <span class="has-text-weight-semibold">{{ author.first_name }} {{author.middle_name}} {{ author.last_name }}</span>{% if forloop.last == false %},{% endif %}
                 {% else %}
                 <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
                   }}</a>{% if forloop.last == false %},{% endif %}
@@ -188,14 +176,13 @@ layout: null
               </span>
               {% endfor %}
             </div>
-            <div class="publication-venue">
+            <div class="has-text-grey">
               <span>{{ publication.venue }}</span>
               {% for award in publication.awards %}
-              <span class="publication-venue-emph">{{ award }}<span>
+              <span class="has-text-danger has-text-weight-medium is-size-7 pl-1">{{ award }}</span>
                   {% endfor %}
             </div>
-            <p class="publication-description">{{ publication.description }}</p>
-            <div class="publication-links buttons field has-addons">
+            <div class="pt-1 buttons field has-addons">
               {% if publication.project_page %}
               <a class="external-link button is-small" href="{{ publication.project_page }}">
                 <span>Project page</span>
@@ -252,34 +239,6 @@ layout: null
       This template is borrowed from <a href="https://github.com/keunhong/keunhong.github.io">Keunhong Park</a>.
     </p>
   </div>
-
-</section>
-
-<!-- <script>
-  $(document).ready(function () {
-    // Initially hide all content sections except the Research section
-    $('.content-section').hide();
-    $('#research-section').show();
-
-    // Initially activate the Research button
-    $('.section-button[data-section="research"]').addClass('is-active');
-
-    $('.section-button').click(function () {
-      // Deactivate all buttons
-      $('.section-button').removeClass('is-active');
-
-      // Activate the clicked button
-      $(this).addClass('is-active');
-
-      // Hide all content sections
-      $('.content-section').hide();
-
-      // Show the corresponding section
-      var sectionId = $(this).data('section') + '-section';
-      $('#' + sectionId).show();
-    });
-  });
-</script> -->
 
 </body>
 

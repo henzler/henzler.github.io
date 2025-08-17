@@ -27,6 +27,7 @@ layout: null
   <link href="./fontawesome/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="./css/bulma.min.css" rel="stylesheet">
+  <link href="./css/bulma-overrides.css" rel="stylesheet">
   <link href="./css/cv.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -39,19 +40,15 @@ layout: null
 </head>
 
 <body id="cv-content">
-
-  <!-- <img src="./fontawesome/svgs/brands/google.svg" alt="Icon" width="24" height="24"> -->
-
   <section class="has-text-black">
     <div class="container is-max-desktop">
       <div class="columns is-vcentered is-tablet">
         <div class="column">
-          <h2 class="title is-2 has-text-centered-mobile">  <a href="{{ site.url }}">{{ site.name }}</a></h2>
+          <h1 class="title is-1 has-text-centered-mobile">  <a href="{{ site.url }}">{{ site.name }}</a></h1>
           <h5 class="subtitle is-5 has-text-centered-mobile">{{ site.position }}</h5>
           <!-- <button id="save-pdf-button" class="button is-small" data-html2canvas-ignore="true" title="Click to open print dialog. Select 'Save as PDF' and set margins to 'Default' for best results.">Download CV</button> -->
 
         </div>
-        <!-- <div class="column is-narrow portrait-column has-text-centered-mobile" data-html2canvas-ignore="true"> -->
         <div class="column is-narrow portrait-column has-text-centered-mobile">
           <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Philipp Henzler" />
         </div>
@@ -84,21 +81,19 @@ layout: null
         </div>
       </div>
 
-        
       <div class="content">
-       
-        <h3 class="title is-3 mb-3 mt-3">Employment</h3>
+        <h4 class="title is-4 mb-3 mt-3">Employment</h4>
         {% for job in site.data.employment %}
           <div class="columns is-mobile is-multiline">
-            <div class="column pb-0">
-              <h4> {% if job.logo-image %} <img src="./images/{{job.logo-image}}" alt="{{job.company}} logo" style="width: 20px; height: 20px; vertical-align: middle;"> {% elsif job.fa-icon %} <i class="{% if job.icon-type %}fa-{{job.icon-type}}{% else %}fa-brands{% endif %} fa-{{job.fa-icon}}"></i> {% endif %} {{ job.company }}</h4>
+            <div class="column has-text-weight-semibold">
+              {% if job.logo-image %} <img src="./images/{{job.logo-image}}" alt="{{job.company}} logo" style="width: 20px; height: 20px; vertical-align: middle;"> {% elsif job.fa-icon %} <i class="{% if job.icon-type %}fa-{{job.icon-type}}{% else %}fa-brands{% endif %} fa-{{job.fa-icon}}"></i> {% endif %} {{ job.company }}
             </div>
           </div>
           
           {% for role in job.roles %}
           <div class="columns is-mobile is-multiline pt-0 pl-2">
             <div class="column is-three-fifths pt-0 pb-0 ">
-              <b>{{ role.title }}</b>, {{ role.description }}
+              <span class=""> {{ role.title }}</span>, <span class="has-text-grey">{{ role.description }}</span>
             </div>
             <div class="column pt-0 pb-0">
               <i class="fas fa-map-marker-alt"></i> 
@@ -112,11 +107,11 @@ layout: null
           {% endfor %}
         {% endfor %}
 
-        <h3 class="title is-3 mb-3 mt-3">Education</h3>
+        <h4 class="title is-4 mb-3 mt-3">Education</h4>
         {% for school in site.data.education %}
         <div class="columns is-mobile is-multiline">
           <div class="column is-three-fifths pb-0">
-            <b>{{ school.degree }}</b> in <b>{{ school.subject }}</b> at <b>{{ school.university }}</b>
+            <span class="has-text-weight-semibold">{{ school.degree }}</span> in {{ school.subject }} at {{ school.university }}
           </div>
           <div class="column pb-0">
             <i class="fas fa-map-marker-alt"></i> 
@@ -127,31 +122,31 @@ layout: null
             {{ school.dates }}
           </div>
         </div>
-        <div class="columns pl-2">
+        <div class="columns pl-2 has-text-grey">
           <div class="column">
             {{ school.description }}
           </div>  
         </div>
         {% endfor %}
           
-        <h3 class="title is-3 mb-3 mt-3">Product Impact</h3>
+        <h4 class="title is-4 mb-3 mt-3">Product Impact</h4>
         {% for impact in site.data.product_impact %}
         <div class="columns is-mobile is-multiline">
-          <div class="column is-three-fifths pb-0">
-            <a href="{{ impact.project_page }}"><h4>{{ impact.title }}</h4></a>
+          <div class="column is-three-fifths has-text-weight-semibold">
+            {{ impact.title }}
+            {% if impact.project_page %}
+              <a class="external-link" href="{{ impact.project_page }}">
+                <i class="fas fa-globe"></i>
+              </a>
+            {% endif %}
           </div>
-          <div class="column has-text-right-tablet pb-0">
+          <div class="column has-text-right-tablet">
             {{ impact.date }}
           </div>
         </div>
         <div class="columns pl-2">
           <div class="column pt-0">
-            <b>{{ impact.product_name }}</b>, {{ impact.description }}
-            {% if impact.project_page %}
-            <a class="external-link" href="{{ impact.project_page }}">
-              <i class="fas fa-globe"></i>
-            </a>
-            {% endif %}
+            {{ impact.product_name }}, <span class="has-text-grey">{{ impact.description }}</span>
           </div>
         </div>
         {% endfor %}
@@ -165,15 +160,20 @@ layout: null
             [{{ pub_number }}]
           </div>
           <div class="column">
-            <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>  
+            <div class="has-text-weight-semibold">{{ publication.title }}
+            </div>
             <div>
               {{ publication.venue }} 
               {% if publication.project_page %}
-              <a class="external-link" href="https://arxiv.org/abs/{{ publication.project_page }}">
+              <a class="external-link" href="{{ publication.project_page }}">
                 <i class="fas fa-globe"></i>
               </a>
               {% endif %}
-              {% if publication.arxiv %}
+              {% if publication.pdf %}
+              <a class="external-link" href="{{ publication.pdf }}">
+                <i class="fas fa-file"></i>
+              </a>
+              {% elsif publication.arxiv %}
               <a class="external-link" href="https://arxiv.org/abs/{{ publication.arxiv }}">
                 <i class="fas fa-file"></i>
               </a>
