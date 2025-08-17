@@ -1,0 +1,20 @@
+- id: veo2_controls
+  title: Veo2 Multi-Modal Video Controls
+  product_name: Veo / Flow
+  project_page: https://flow.google
+  date: 2025
+  image: veo2_controls_before.png
+  image_mouseover: veo2_controls_after.mp4
+  description: "Google DeepMind's state-of-the-art generative video model."
+  team: 
+    - veo_team
+- id: spins
+  title: 3D Shoppable Products
+  product_name: Google Search
+  project_page: https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/ 
+  date: 2022-2025
+  image: spins_before.png
+  image_mouseover: spins_after.mp4
+  description: "AI-generated 360-degree spins of products."
+  team:
+    - maya_team

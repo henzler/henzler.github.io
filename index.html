@@ -45,8 +45,8 @@ layout: null
             {{ site.position }}, {{ site.affiliation }}
           </h4>
           <div class="buttons is-centered mb-0">
-            <!-- <a class="external-link button is-white is-medium" href="cv.html"> -->
-            <a class="external-link button is-white is-medium" href="images/Henzler_CV.pdf">
+            <a class="external-link button is-white is-medium" href="cv.html">
+            <!-- <a class="external-link button is-white is-medium" href="images/Henzler_CV.pdf"> -->
               <span class="icon"><i class="ai ai-cv"></i></span>
             </a>
 
@@ -86,14 +86,66 @@ layout: null
   <hr class="custom-hr">
 
 
-  <!-- <div class="container is-max-desktop" id="section-button-container">
-    <div class="buttons is-centered" id="section-buttons">
-      <button class="button section-button is-size-3 has-text-weight-bold" data-section="research">Research</button>
-      <button class="button section-button is-size-3 has-text-weight-bold" data-section="projects">Projects</button>
-      <button class="button section-button is-size-3 has-text-weight-bold" data-section="cv">CV</button>
-    </div>
-  </div> -->
+  <section class="section content-section pb-0" id="product-impact-section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Product Impact</h2>
 
+      {% for impact in site.data.product_impact %}
+      <div class="publication-block columns">
+
+        <div class="column is-2">
+          <div class="publication-image {% if impact.image_mouseover %}publication-mousecell{% endif %}">
+            {% if impact.image_mouseover contains 'mp4' %}
+            <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
+              <source src="./images/{{ impact.image_mouseover }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            {% endif %}
+            <img alt="{{ impact.title }}" src="./images/{{ impact.image }}" />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            {% if impact.project_page %}
+            <h3 class="publication-title"><a href="{{ impact.project_page }}">{{ impact.title }}</a></h3>
+            {% else %}
+            <h3 class="publication-title">{{ impact.title }}</h3>
+            {% endif %}
+
+            <div class="publication-authors">
+              {% for team_id in impact.team %}
+              {% assign team = site.data.authors[team_id] %}
+              <span class="author-block {% if team.is_me %}author-me{% endif %}">
+                {% if team.is_me %}
+                {{ team.first_name }} {{team.middle_name}} {{ team.last_name }}{% if forloop.last == false %},{%
+                endif %}
+                {% else %}
+                <a href="{{ team.website }}">{{ team.first_name }} {{ team.middle_name }} {{ team.last_name
+                  }}</a>{% if forloop.last == false %},{% endif %}
+                {% endif %}
+              </span>
+              {% endfor %}
+            </div>
+            <div class="publication-venue">
+              <span>{{ impact.product_name }}, {{ impact.date }}</span>
+              {% for award in impact.awards %}
+              <span class="publication-venue-emph">{{ award }}<span>
+                  {% endfor %}
+            </div>
+            <div class="publication-links buttons field has-addons">
+              {% if impact.project_page %}
+              <a class="external-link button is-small" href="{{ impact.project_page }}">
+                <span>Project page</span>
+              </a>
+              {% endif %}
+            </div>
+            </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 
   <section class="section content-section" id="research-section">
     <div class="container is-max-desktop">

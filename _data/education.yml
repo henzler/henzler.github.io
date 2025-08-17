@@ -1,16 +1,24 @@
-- name: Ph. D in Computer Science at University College London
+- degree: Ph.D.
+  subject: Computer Science
+  university: University College London
   description: >-
     Advisors: <a href="https://www.homepages.ucl.ac.uk/~ucactri/">Tobias Ritschel</a> and
-    <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/">Niloy J. Mitra</a><br />
-    Funded by Google Fellowship Scholarship & UCL
+    <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra/">Niloy J. Mitra</a>
   dates: Jun 2018 - Apr 2023
+  location: London, UK
 
-- name: M.Sc. in Media Informatics at Ulm University
+- degree: M.Sc.
+  subject: Media Informatics
+  university: Ulm University
   description: >-
     Grade: 1.1; Advisor: <a href="https://www.uni-ulm.de/in/mi/institut/mitarbeiter/timo-ropinski">Timo Ropinski</a>
   dates: Oct 2015 - Oct 2017
+  location: Ulm, GER
 
-- name: B.Sc. in Media Informatics at Ulm University
+- degree: B.Sc.
+  subject: Media Informatics
+  university: Ulm University
   description: >-
     Grade 1.3; Advisor: <a href="https://www.uni-ulm.de/in/mi/institut/personal/er/">Enrico Rukzio</a>
   dates: Oct 2012 - Oct 2015
+  location: Ulm, GER
