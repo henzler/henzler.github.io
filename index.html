@@ -165,15 +165,13 @@ layout: null
 
             <div class>
               {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                {% assign author = site.data.authors[author_id] %}
                 {% if author.is_me %}
                 <span class="has-text-weight-semibold">{{ author.first_name }} {{author.middle_name}} {{ author.last_name }}</span>{% if forloop.last == false %},{% endif %}
                 {% else %}
                 <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
                   }}</a>{% if forloop.last == false %},{% endif %}
                 {% endif %}
-              </span>
               {% endfor %}
             </div>
             <div class="has-text-grey">

@@ -3,13 +3,23 @@
 
 
 body {
-  margin-top: 1em;
-  margin-bottom: 1em;
   font-family: "Google Sans", "Noto Sans", sans-serif;
 }
 
-a {
-    color: #000;
+#cv-content {
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+// Custom icon class to mimic FontAwesome behavior
+.icon-svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: -0.125em; // FontAwesome's default alignment
+    overflow: visible;
 }
 
 .portrait-column {
@@ -25,434 +35,434 @@ a {
     margin-bottom: 0 !important;
 }
 
-// Styles for browser native print (better quality)
-@media print {
-    // Remove default print styles and artifacts
-    @page {
-        margin: 0.5in;
-        size: letter;
+// // Styles for browser native print (better quality)
+// @media print {
+//     // Remove default print styles and artifacts
+//     @page {
+//         margin: 0.5in;
+//         size: letter;
         
-        // Remove page numbers and headers/footers
-        @top-left { content: ""; }
-        @top-center { content: ""; }
-        @top-right { content: ""; }
-        @bottom-left { content: ""; }
-        @bottom-center { content: ""; }
-        @bottom-right { content: ""; }
-    }
+//         // Remove page numbers and headers/footers
+//         @top-left { content: ""; }
+//         @top-center { content: ""; }
+//         @top-right { content: ""; }
+//         @bottom-left { content: ""; }
+//         @bottom-center { content: ""; }
+//         @bottom-right { content: ""; }
+//     }
     
-    // AGGRESSIVE removal of ALL possible line-creating elements
-    * {
-        border: none !important;
-        border-top: none !important;
-        border-bottom: none !important;
-        border-left: none !important;
-        border-right: none !important;
-        outline: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-        text-decoration: none !important;
-        text-decoration-line: none !important;
-        border-image: none !important;
-        background-image: none !important;
-    }
+//     // AGGRESSIVE removal of ALL possible line-creating elements
+//     * {
+//         border: none !important;
+//         border-top: none !important;
+//         border-bottom: none !important;
+//         border-left: none !important;
+//         border-right: none !important;
+//         outline: none !important;
+//         box-shadow: none !important;
+//         text-shadow: none !important;
+//         text-decoration: none !important;
+//         text-decoration-line: none !important;
+//         border-image: none !important;
+//         background-image: none !important;
+//     }
     
-    *::before, *::after {
-        border: none !important;
-        border-top: none !important;
-        border-bottom: none !important;
-        border-left: none !important;
-        border-right: none !important;
-        outline: none !important;
-        box-shadow: none !important;
-        text-decoration: none !important;
-        content: none !important;
-        background-image: none !important;
-    }
+//     *::before, *::after {
+//         border: none !important;
+//         border-top: none !important;
+//         border-bottom: none !important;
+//         border-left: none !important;
+//         border-right: none !important;
+//         outline: none !important;
+//         box-shadow: none !important;
+//         text-decoration: none !important;
+//         content: none !important;
+//         background-image: none !important;
+//     }
     
-    html, body {
-        width: 100% !important;
-        height: auto !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        font-family: "Google Sans", "Noto Sans", Arial, sans-serif !important;
-        font-size: 11pt !important;
-        line-height: 1.4 !important;
-        color: #000 !important;
-        background: white !important;
-        -webkit-print-color-adjust: exact !important;
-        color-adjust: exact !important;
-        border: none !important;
-    }
+//     html, body {
+//         width: 100% !important;
+//         height: auto !important;
+//         margin: 0 !important;
+//         padding: 0 !important;
+//         font-family: "Google Sans", "Noto Sans", Arial, sans-serif !important;
+//         font-size: 11pt !important;
+//         line-height: 1.4 !important;
+//         color: #000 !important;
+//         background: white !important;
+//         -webkit-print-color-adjust: exact !important;
+//         color-adjust: exact !important;
+//         border: none !important;
+//     }
     
-    .container {
-        width: 100% !important;
-        max-width: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-    }
+//     .container {
+//         width: 100% !important;
+//         max-width: none !important;
+//         margin: 0 !important;
+//         padding: 0 !important;
+//         border: none !important;
+//     }
     
-    .portrait-column {
-        display: none !important;
-    }
+//     .portrait-column {
+//         display: none !important;
+//     }
     
-    #save-pdf-button {
-        display: none !important;
-    }
+//     #save-pdf-button {
+//         display: none !important;
+//     }
     
-    // EVERY possible header element - remove ALL borders
-    h1, h2, h3, h4, h5, h6,
-    .title, .subtitle,
-    .title.is-1, .title.is-2, .title.is-3, .title.is-4, .title.is-5, .title.is-6,
-    .subtitle.is-1, .subtitle.is-2, .subtitle.is-3, .subtitle.is-4, .subtitle.is-5, .subtitle.is-6 {
-        border: none !important;
-        border-top: none !important;
-        border-bottom: none !important;
-        border-left: none !important;
-        border-right: none !important;
-        outline: none !important;
-        text-decoration: none !important;
-        text-decoration-line: none !important;
-        box-shadow: none !important;
-        background-image: none !important;
-        margin-left: 0 !important;
-        padding-left: 0 !important;
-    }
+//     // EVERY possible header element - remove ALL borders
+//     h1, h2, h3, h4, h5, h6,
+//     .title, .subtitle,
+//     .title.is-1, .title.is-2, .title.is-3, .title.is-4, .title.is-5, .title.is-6,
+//     .subtitle.is-1, .subtitle.is-2, .subtitle.is-3, .subtitle.is-4, .subtitle.is-5, .subtitle.is-6 {
+//         border: none !important;
+//         border-top: none !important;
+//         border-bottom: none !important;
+//         border-left: none !important;
+//         border-right: none !important;
+//         outline: none !important;
+//         text-decoration: none !important;
+//         text-decoration-line: none !important;
+//         box-shadow: none !important;
+//         background-image: none !important;
+//         margin-left: 0 !important;
+//         padding-left: 0 !important;
+//     }
     
-    // Main title styling to match online
-    .title.is-2 {
-        font-size: 24pt !important;
-        font-weight: 700 !important;
-        margin-bottom: 1.5rem !important;
-        color: #000 !important;
-        text-align: left !important;
-        border: none !important;
-    }
+//     // Main title styling to match online
+//     .title.is-2 {
+//         font-size: 24pt !important;
+//         font-weight: 700 !important;
+//         margin-bottom: 1.5rem !important;
+//         color: #000 !important;
+//         text-align: left !important;
+//         border: none !important;
+//     }
     
-    .subtitle.is-5 {
-        font-size: 16pt !important;
-        font-weight: 400 !important;
-        margin-bottom: 0.5rem !important;
-        color: #555 !important;
-        text-align: left !important;
-        border: none !important;
-    }
+//     .subtitle.is-5 {
+//         font-size: 16pt !important;
+//         font-weight: 400 !important;
+//         margin-bottom: 0.5rem !important;
+//         color: #555 !important;
+//         text-align: left !important;
+//         border: none !important;
+//     }
     
-    // Header layout - single row design (only affects the first columns element)
-    .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child {
-        display: block !important;
-        margin-bottom: 0.5rem !important;
-    }
+//     // Header layout - single row design (only affects the first columns element)
+//     .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child {
+//         display: block !important;
+//         margin-bottom: 0.5rem !important;
+//     }
     
-    // Contact info - horizontal layout below title (only in header)
-    .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child .column.has-text-right-tablet {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
-        column-gap: 0.5rem !important;
-        margin-top: 0rem !important;
-        text-align: left !important;
-    }
+//     // Contact info - horizontal layout below title (only in header)
+//     .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child .column.has-text-right-tablet {
+//         display: flex !important;
+//         flex-direction: row !important;
+//         flex-wrap: wrap !important;
+//         column-gap: 0.5rem !important;
+//         margin-top: 0rem !important;
+//         text-align: left !important;
+//     }
     
-    .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child .column.has-text-right-tablet p {
-        margin-bottom: 0 !important;
-        font-size: 11pt !important;
-        white-space: nowrap !important;
-    }
+//     .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child .column.has-text-right-tablet p {
+//         margin-bottom: 0 !important;
+//         font-size: 11pt !important;
+//         white-space: nowrap !important;
+//     }
     
-    .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child .column.has-text-right-tablet a {
-        color: #333 !important;
-        text-decoration: none !important;
-        display: inline-flex !important;
-        align-items: center !important;
-    }
+//     .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child .column.has-text-right-tablet a {
+//         color: #333 !important;
+//         text-decoration: none !important;
+//         display: inline-flex !important;
+//         align-items: center !important;
+//     }
     
-    .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child .column.has-text-right-tablet i {
-        margin-right: 0.4rem !important;
-        width: 14px !important;
-        color: #666 !important;
-    }
+//     .container.is-max-desktop > .columns.is-vcentered.is-tablet:first-child .column.has-text-right-tablet i {
+//         margin-right: 0.4rem !important;
+//         width: 14px !important;
+//         color: #666 !important;
+//     }
     
-    // Section headers - FORCE no borders with high specificity
-    h3.title.is-3,
-    .content h3.title.is-3,
-    .content > h3.title.is-3 {
-        page-break-after: avoid !important;
-        margin-top: 1.5rem !important;
-        margin-bottom: 0.75rem !important;
-        margin-left: 0 !important;
-        padding-left: 0 !important;
-        font-size: 18pt !important;
-        font-weight: 600 !important;
-        color: #000 !important;
-        text-align: left !important;
-        border: none !important;
-        border-top: none !important;
-        border-bottom: none !important;
-        border-left: none !important;
-        border-right: none !important;
-        text-decoration: none !important;
-        text-decoration-line: none !important;
-        outline: none !important;
-        box-shadow: none !important;
-        background-image: none !important;
-        padding-bottom: 0 !important;
-    }
+//     // Section headers - FORCE no borders with high specificity
+//     h3.title.is-3,
+//     .content h3.title.is-3,
+//     .content > h3.title.is-3 {
+//         page-break-after: avoid !important;
+//         margin-top: 1.5rem !important;
+//         margin-bottom: 0.75rem !important;
+//         margin-left: 0 !important;
+//         padding-left: 0 !important;
+//         font-size: 18pt !important;
+//         font-weight: 600 !important;
+//         color: #000 !important;
+//         text-align: left !important;
+//         border: none !important;
+//         border-top: none !important;
+//         border-bottom: none !important;
+//         border-left: none !important;
+//         border-right: none !important;
+//         text-decoration: none !important;
+//         text-decoration-line: none !important;
+//         outline: none !important;
+//         box-shadow: none !important;
+//         background-image: none !important;
+//         padding-bottom: 0 !important;
+//     }
     
-    // First section should have less margin
-    h3.title.is-3:first-of-type {
-        margin-top: 0.25rem !important;
-    }
+//     // First section should have less margin
+//     h3.title.is-3:first-of-type {
+//         margin-top: 0.25rem !important;
+//     }
     
-    // Employment section formatting - match online
-    h4 {
-        page-break-after: avoid !important;
-        margin-top: 1rem !important;
-        margin-bottom: 0.75rem !important;
-        margin-left: 0.5rem !important;
-        font-size: 13pt !important;
-        font-weight: 600 !important;
-        display: flex !important;
-        align-items: center !important;
-        color: #000 !important;
-        border: none !important;
-    }
+//     // Employment section formatting - match online
+//     h4 {
+//         page-break-after: avoid !important;
+//         margin-top: 1rem !important;
+//         margin-bottom: 0.75rem !important;
+//         margin-left: 0.5rem !important;
+//         font-size: 13pt !important;
+//         font-weight: 600 !important;
+//         display: flex !important;
+//         align-items: center !important;
+//         color: #000 !important;
+//         border: none !important;
+//     }
     
-    // Company logos - match online sizing
-    h4 img {
-        width: 20px !important;
-        height: 20px !important;
-        vertical-align: middle !important;
-        margin-right: 6px !important;
-        object-fit: contain !important;
-        border: none !important;
-    }
+//     // Company logos - match online sizing
+//     h4 img {
+//         width: 20px !important;
+//         height: 20px !important;
+//         vertical-align: middle !important;
+//         margin-right: 6px !important;
+//         object-fit: contain !important;
+//         border: none !important;
+//     }
     
-    h4 i {
-        font-size: 16px !important;
-        margin-right: 12px !important;
-        vertical-align: middle !important;
-        color: #000 !important;
-        border: none !important;
-    }
+//     h4 i {
+//         font-size: 16px !important;
+//         margin-right: 12px !important;
+//         vertical-align: middle !important;
+//         color: #000 !important;
+//         border: none !important;
+//     }
     
-    // Force tablet/desktop layout for print (Bulma defaults to mobile)
-    .columns {
-        display: flex !important;
-        flex-direction: row !important;
-    }
+//     // Force tablet/desktop layout for print (Bulma defaults to mobile)
+//     .columns {
+//         display: flex !important;
+//         flex-direction: row !important;
+//     }
     
-    .column {
-        flex-basis: 0 !important;
-        flex-grow: 1 !important;
-        flex-shrink: 1 !important;
-    }
+//     .column {
+//         flex-basis: 0 !important;
+//         flex-grow: 1 !important;
+//         flex-shrink: 1 !important;
+//     }
     
-    // Column layout - match web layout exactly
-    .content .columns {
-        margin-bottom: 0.6rem !important;
-        page-break-inside: avoid !important;
-        border: none !important;
-    }
+//     // Column layout - match web layout exactly
+//     .content .columns {
+//         margin-bottom: 0.6rem !important;
+//         page-break-inside: avoid !important;
+//         border: none !important;
+//     }
     
-    .content .column {
-        padding: 0.2rem 0.25rem !important;
-        flex: 1 !important;
-        min-width: 0 !important;
-        border: none !important;
-    }
+//     .content .column {
+//         padding: 0.2rem 0.25rem !important;
+//         flex: 1 !important;
+//         min-width: 0 !important;
+//         border: none !important;
+//     }
     
-    // Specific column sizing to match online layout (only for content)
-    .content .column.is-two-fifths {
-        flex: 0 0 40% !important;
-        max-width: 40% !important;
-    }
+//     // Specific column sizing to match online layout (only for content)
+//     .content .column.is-two-fifths {
+//         flex: 0 0 40% !important;
+//         max-width: 40% !important;
+//     }
     
-    .content .column.is-three-fifths {
-        flex: 0 0 60% !important;
-        max-width: 60% !important;
-    }
+//     .content .column.is-three-fifths {
+//         flex: 0 0 60% !important;
+//         max-width: 60% !important;
+//     }
     
-    // Publication number column - minimal width with high specificity
-    .content .columns .column.is-narrow,
-    .content .column.is-narrow.pr-0,
-    .column.is-narrow {
-        flex: 0 0 30px !important;
-        max-width: 30px !important;
-        min-width: 30px !important;
-        width: 30px !important;
-        flex-basis: 30px !important;
-        flex-grow: 0 !important;
-        flex-shrink: 0 !important;
-    }
+//     // Publication number column - minimal width with high specificity
+//     .content .columns .column.is-narrow,
+//     .content .column.is-narrow.pr-0,
+//     .column.is-narrow {
+//         flex: 0 0 30px !important;
+//         max-width: 30px !important;
+//         min-width: 30px !important;
+//         width: 30px !important;
+//         flex-basis: 30px !important;
+//         flex-grow: 0 !important;
+//         flex-shrink: 0 !important;
+//     }
     
-    // Ensure the remaining column takes up the rest
-    .content .columns.is-mobile .column:not(.is-narrow) {
-        flex: 1 1 auto !important;
-        max-width: calc(100% - 30px) !important;
-    }
+//     // Ensure the remaining column takes up the rest
+//     .content .columns.is-mobile .column:not(.is-narrow) {
+//         flex: 1 1 auto !important;
+//         max-width: calc(100% - 30px) !important;
+//     }
     
-    // Nuclear option: Force publication layout with extreme specificity
-    body .content .columns.is-mobile .column.is-narrow.pr-0 {
-        display: inline-block !important;
-        width: 25px !important;
-        max-width: 25px !important;
-        min-width: 25px !important;
-        flex: none !important;
-        vertical-align: top !important;
-    }
+//     // Nuclear option: Force publication layout with extreme specificity
+//     body .content .columns.is-mobile .column.is-narrow.pr-0 {
+//         display: inline-block !important;
+//         width: 25px !important;
+//         max-width: 25px !important;
+//         min-width: 25px !important;
+//         flex: none !important;
+//         vertical-align: top !important;
+//     }
     
-    body .content .columns.is-mobile .column:last-child {
-        display: inline-block !important;
-        width: calc(100% - 30px) !important;
-        vertical-align: top !important;
-    }
+//     body .content .columns.is-mobile .column:last-child {
+//         display: inline-block !important;
+//         width: calc(100% - 30px) !important;
+//         vertical-align: top !important;
+//     }
     
-    // Text styling to match online (only for content columns)
-    .content .column p, .content .column div, .content .column b {
-        overflow: visible !important;
-        word-wrap: break-word !important;
-        hyphens: auto !important;
-        max-width: 100% !important;
-        font-size: 11pt !important;
-        line-height: 1.4 !important;
-        color: #000 !important;
-        border: none !important;
-    }
+//     // Text styling to match online (only for content columns)
+//     .content .column p, .content .column div, .content .column b {
+//         overflow: visible !important;
+//         word-wrap: break-word !important;
+//         hyphens: auto !important;
+//         max-width: 100% !important;
+//         font-size: 11pt !important;
+//         line-height: 1.4 !important;
+//         color: #000 !important;
+//         border: none !important;
+//     }
     
-    // Bold text styling
-    b, strong {
-        font-weight: 600 !important;
-        color: #000 !important;
-        border: none !important;
-    }
+//     // Bold text styling
+//     b, strong {
+//         font-weight: 600 !important;
+//         color: #000 !important;
+//         border: none !important;
+//     }
     
-    // Links in PDF - keep readable
-    a {
-        color: #000 !important;
-        text-decoration: none !important;
-        font-weight: inherit !important;
-        border: none !important;
-    }
+//     // Links in PDF - keep readable
+//     a {
+//         color: #000 !important;
+//         text-decoration: none !important;
+//         font-weight: inherit !important;
+//         border: none !important;
+//     }
     
-    // Hide web-only elements
-    .external-link {
-        display: none !important;
-    }
+//     // Hide web-only elements
+//     .external-link {
+//         display: none !important;
+//     }
     
-    // Better spacing to match online
-    .section {
-        margin-bottom: 1.5rem !important;
-        border: none !important;
-    }
+//     // Better spacing to match online
+//     .section {
+//         margin-bottom: 1.5rem !important;
+//         border: none !important;
+//     }
     
-    // Page break controls
-    .page-break-avoid {
-        page-break-inside: avoid !important;
-        page-break-after: avoid !important;
-    }
+//     // Page break controls
+//     .page-break-avoid {
+//         page-break-inside: avoid !important;
+//         page-break-after: avoid !important;
+//     }
     
-    // Remove ALL possible line/divider elements
-    hr, .hr, .divider, .separator, .line, .border,
-    .custom-hr, .rule, .horizontal-rule {
-        display: none !important;
-        border: none !important;
-        visibility: hidden !important;
-    }
+//     // Remove ALL possible line/divider elements
+//     hr, .hr, .divider, .separator, .line, .border,
+//     .custom-hr, .rule, .horizontal-rule {
+//         display: none !important;
+//         border: none !important;
+//         visibility: hidden !important;
+//     }
     
-    // Publication/Impact authors styling
-    .publication-authors {
-        font-size: 10pt !important;
-        color: #555 !important;
-        margin-bottom: 0.25rem !important;
-        border: none !important;
-    }
+//     // Publication/Impact authors styling
+//     .publication-authors {
+//         font-size: 10pt !important;
+//         color: #555 !important;
+//         margin-bottom: 0.25rem !important;
+//         border: none !important;
+//     }
     
-    .author-me {
-        font-weight: 600 !important;
-        color: #000 !important;
-        border: none !important;
-    }
-}
+//     .author-me {
+//         font-weight: 600 !important;
+//         color: #000 !important;
+//         border: none !important;
+//     }
+// }
 
-// Styles for PDF export mode (html2pdf fallback)
-body.pdf-export {
-    width: 850px !important;
-    margin: 0 auto !important;
-    padding: 20px !important;
-    font-family: "Google Sans", "Noto Sans", Arial, sans-serif !important;
-    font-size: 11pt !important;
-    line-height: 1.4 !important;
-    color: #000 !important;
-    background: white !important;
+// // Styles for PDF export mode (html2pdf fallback)
+// body.pdf-export {
+//     width: 850px !important;
+//     margin: 0 auto !important;
+//     padding: 20px !important;
+//     font-family: "Google Sans", "Noto Sans", Arial, sans-serif !important;
+//     font-size: 11pt !important;
+//     line-height: 1.4 !important;
+//     color: #000 !important;
+//     background: white !important;
     
-    .container {
-        width: 100% !important;
-        max-width: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+//     .container {
+//         width: 100% !important;
+//         max-width: none !important;
+//         margin: 0 !important;
+//         padding: 0 !important;
+//     }
     
-    .portrait-column {
-        display: none !important;
-    }
+//     .portrait-column {
+//         display: none !important;
+//     }
     
-    #save-pdf-button {
-        display: none !important;
-    }
+//     #save-pdf-button {
+//         display: none !important;
+//     }
     
-    h3.title {
-        margin-top: 1rem !important;
-        margin-bottom: 0.5rem !important;
-        font-size: 13pt !important;
-        font-weight: 600 !important;
-        border-bottom: 1px solid #333 !important;
-        padding-bottom: 2px !important;
-    }
+//     h3.title {
+//         margin-top: 1rem !important;
+//         margin-bottom: 0.5rem !important;
+//         font-size: 13pt !important;
+//         font-weight: 600 !important;
+//         border-bottom: 1px solid #333 !important;
+//         padding-bottom: 2px !important;
+//     }
     
-    h4 {
-        margin-bottom: 0.3rem !important;
-        font-size: 11pt !important;
-        font-weight: 600 !important;
-        display: flex !important;
-        align-items: center !important;
-    }
+//     h4 {
+//         margin-bottom: 0.3rem !important;
+//         font-size: 11pt !important;
+//         font-weight: 600 !important;
+//         display: flex !important;
+//         align-items: center !important;
+//     }
     
-    h4 img {
-        width: 16px !important;
-        height: 16px !important;
-        margin-right: 4px !important;
-    }
+//     h4 img {
+//         width: 16px !important;
+//         height: 16px !important;
+//         margin-right: 4px !important;
+//     }
     
-    h4 i {
-        font-size: 14px !important;
-        margin-right: 4px !important;
-    }
+//     h4 i {
+//         font-size: 14px !important;
+//         margin-right: 4px !important;
+//     }
     
-    .columns {
-        margin-bottom: 0.4rem !important;
-        width: 100% !important;
-    }
+//     .columns {
+//         margin-bottom: 0.4rem !important;
+//         width: 100% !important;
+//     }
     
-    .column {
-        padding: 0.1rem 0.2rem !important;
-    }
+//     .column {
+//         padding: 0.1rem 0.2rem !important;
+//     }
     
-    // Publication number column in fallback mode with high specificity
-    .columns .column.is-narrow,
-    .column.is-narrow.pr-0,
-    .column.is-narrow {
-        flex: 0 0 30px !important;
-        max-width: 30px !important;
-        min-width: 30px !important;
-        width: 30px !important;
-        flex-basis: 30px !important;
-        flex-grow: 0 !important;
-        flex-shrink: 0 !important;
-    }
+//     // Publication number column in fallback mode with high specificity
+//     .columns .column.is-narrow,
+//     .column.is-narrow.pr-0,
+//     .column.is-narrow {
+//         flex: 0 0 30px !important;
+//         max-width: 30px !important;
+//         min-width: 30px !important;
+//         width: 30px !important;
+//         flex-basis: 30px !important;
+//         flex-grow: 0 !important;
+//         flex-shrink: 0 !important;
+//     }
     
-    .external-link {
-        display: none !important;
-    }
-}
+//     .external-link {
+//         display: none !important;
+//     }
+// }
