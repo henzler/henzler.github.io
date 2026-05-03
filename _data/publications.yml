@@ -1,3 +1,84 @@
+- id: cityrag
+  title: "CityRAG: Stepping Into a City via Spatially-Grounded Video Generation"
+  venue: arXiv, 2026
+  arxiv: 2604.19741
+  project_page: https://cityrag.github.io/
+  image: cityrag_before.png
+  image_mouseover: cityrag_after.mp4
+  authors:
+    - genechou
+    - cherrmann
+    - kylegenova
+    - boyangdeng
+    - songyoupeng
+    - bharathh
+    - jasonyzhang
+    - snavely
+    - phenzler
+- id: ufo4d
+  title: "UFO-4D: Unposed Feedforward 4D Reconstruction from Two Images"
+  venue: ICLR, 2026
+  arxiv: 2602.24290
+  project_page: https://ufo-4d.github.io/
+  image: ufo4d_before.png
+  image_mouseover: ufo4d_after.mp4
+  authors:
+    - jhur
+    - cherrmann
+    - songyoupeng
+    - phenzler
+    - zeyuma
+    - tzickler
+    - deqingsun
+- id: gr3en
+  title: "GR3EN: Generative Relighting for 3D Environments"
+  venue: SIGGRAPH, 2026
+  arxiv: 2601.16272
+  project_page: https://gr3en-relight.github.io/
+  image: gr3en_before.png
+  image_mouseover: gr3en_after.mp4
+  authors:
+    - xxing
+    - phenzler
+    - jhur
+    - runzeli
+    - barron
+    - pratuls
+    - dorverbin
+- id: vlic
+  title: "VLIC: Vision-Language Models As Perceptual Judges for Human-Aligned Image Compression"
+  venue: CVPR, 2026
+  arxiv: 2512.15701
+  project_page: https://kylesargent.github.io/vlic
+  image: vlic_before.jpg
+  image_mouseover: vlic_after.mp4
+  authors:
+    - ksargent
+    - ruiqigao
+    - phenzler
+    - cherrmann
+    - holynski
+    - lifei
+    - jiajunwu
+    - jasonyzhang
+- id: rogr
+  title: "ROGR: Relightable 3D Objects Using Generative Relighting"
+  venue: NeurIPS, 2025
+  arxiv: 2510.03163
+  project_page: https://tangjiapeng.github.io/ROGR/
+  image: rogr_before.png
+  image_mouseover: rogr_after.mp4
+  authors:
+    - jtang
+    - mlevine
+    - dorverbin
+    - sgarbin
+    - mniessner
+    - rmbrualla
+    - pratuls
+    - phenzler
+  awards:
+    - "Spotlight"
 - id: bolt3d
   title: "Bolt3D: Generating 3D Scenes in Seconds"
   venue: ICCV, 2025

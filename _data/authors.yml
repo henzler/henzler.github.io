@@ -192,5 +192,81 @@ zhengqili:
   first_name: Zhengqi
   last_name: Li
   website: https://zhengqili.github.io/
+bharathh:
+  first_name: Bharath
+  last_name: Hariharan
+  website: http://home.bharathh.info/
+boyangdeng:
+  first_name: Boyang
+  last_name: Deng
+  website: https://boyangdeng.com/
+cherrmann:
+  first_name: Charles
+  last_name: Herrmann
+  website: https://scholar.google.com/citations?user=LQvi5XAAAAAJ&hl=en
+deqingsun:
+  first_name: Deqing
+  last_name: Sun
+  website: https://deqings.github.io/
+genechou:
+  first_name: Gene
+  last_name: Chou
+  website: https://genechou.com/
+jhur:
+  first_name: Junhwa
+  last_name: Hur
+  website: https://hurjunhwa.github.io/
+jiajunwu:
+  first_name: Jiajun
+  last_name: Wu
+  website: https://jiajunwu.com/
+jtang:
+  first_name: Jiapeng
+  last_name: Tang
+  website: https://tangjiapeng.github.io/
+ksargent:
+  first_name: Kyle
+  last_name: Sargent
+  website: https://kylesargent.github.io/
+kylegenova:
+  first_name: Kyle
+  last_name: Genova
+  website: https://www.kylegenova.com/
+lifei:
+  first_name: Fei-Fei
+  last_name: Li
+  website: https://profiles.stanford.edu/fei-fei-li
+mlevine:
+  first_name: Matthew
+  last_name: Levine
+  website: https://www.linkedin.com/in/matthew-levine-21799667/
+mniessner:
+  first_name: Matthias
+  last_name: Nießner
+  website: https://niessnerlab.org/members/matthias_niessner/profile.html
+runzeli:
+  first_name: Runze
+  last_name: Li
+  website: https://bragilee.github.io/
+sgarbin:
+  first_name: Stephan J.
+  last_name: Garbin
+  website: http://stephangarbin.com/
+songyoupeng:
+  first_name: Songyou
+  last_name: Peng
+  website: https://pengsongyou.github.io/
+tzickler:
+  first_name: Todd
+  last_name: Zickler
+  website: https://www.eecs.harvard.edu/~zickler/Main/HomePage
+xxing:
+  first_name: Xiaoyan
+  last_name: Xing
+  website: https://xyxingx.github.io/
+zeyuma:
+  first_name: Zeyu
+  last_name: Ma
+  website: https://mazeyu.github.io/
 
 
