@@ -1,11 +1,20 @@
+- id: omni
+  title: Gemini Omni
+  product_name: Gemini / Flow
+  project_page: https://gemini.google/overview/video-generation/
+  date: 2026
+  image: omni_before.jpg
+  image_mouseover: omni_after.mp4
+  description: "A video generation model that creates videos from any input."
+  team: omni_team
 - id: veo2_controls
-  title: Veo - Multi-Modal Video Controls
-  product_name: Veo / Flow
+  title: Veo 2/3
+  product_name: Flow
   project_page: https://flow.google
-  date: 2025
+  date: 2025-2026
   image: veo2_controls_before.png
   image_mouseover: veo2_controls_after.mp4
-  description: "Google DeepMind's state-of-the-art generative video model."
+  description: "Google DeepMind's generative video model."
   team: veo_team
 - id: spins
   title: 3D Shoppable Products

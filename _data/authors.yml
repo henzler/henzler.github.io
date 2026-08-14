@@ -129,7 +129,7 @@ ruiqigao:
 rundiwu:
   first_name: Rundi
   last_name: Wu
-  website: https://www.cs.columbia.edu/~rundi/
+  website: https://rundiwu.github.io/
 lsbodorne:
   first_name: Luca
   last_name: Sbodorne
@@ -177,6 +177,9 @@ vdeschaintre:
 veo_team:
   first_name: Veo team and collaborators at Google DeepMind
   website: https://deepmind.google/models/veo/
+omni_team:
+  first_name: Omni team and collaborators at Google DeepMind
+  website: https://gemini.google/overview/video-generation/
 maya_team:
   first_name: Team and collaborators at Google
   website: https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/ 
@@ -268,5 +271,33 @@ zeyuma:
   first_name: Zeyu
   last_name: Ma
   website: https://mazeyu.github.io/
+ageiger:
+  first_name: Andreas
+  last_name: Geiger
+  website: https://www.cvlibs.net/
+chrirupp:
+  first_name: Christian
+  last_name: Rupprecht
+  website: https://chrirupp.github.io/
+gbhat:
+  first_name: Goutam
+  last_name: Bhat
+  website: https://goutamgmb.github.io/
+haofeixu:
+  first_name: Haofei
+  last_name: Xu
+  website: https://haofeixu.github.io/
+michaelniemeyer:
+  first_name: Michael
+  last_name: Niemeyer
+  website: https://m-niemeyer.github.io/
+okupyn:
+  first_name: Orest
+  last_name: Kupyn
+  website: https://scholar.google.com/citations?user=KoC7bP4AAAAJ&hl=en
+pollefeys:
+  first_name: Marc
+  last_name: Pollefeys
+  website: https://people.inf.ethz.ch/marc.pollefeys/
 
 

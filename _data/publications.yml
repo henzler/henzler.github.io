@@ -1,3 +1,35 @@
+- id: pointdit
+  title: "PointDiT: Pixel-Space Diffusion for Monocular Geometry Estimation"
+  venue: ICML, 2026
+  arxiv: 2607.02515
+  project_page: https://haofeixu.github.io/pointdit/
+  image: pointdit_before.jpg
+  image_mouseover: pointdit_after.mp4
+  authors:
+    - haofeixu
+    - rundiwu
+    - phenzler
+    - nkali
+    - moechsle
+    - fabianmanhardt
+    - pollefeys
+    - ageiger
+    - tombari
+    - michaelniemeyer
+- id: flat
+  title: "FLAT: Feedforward Latent Triangle Splatting for Geometrically Accurate Scene Generation"
+  venue: arXiv, 2026
+  arxiv: 2606.24876
+  project_page: https://flat-splat.github.io/
+  image: flat_before.jpg
+  image_mouseover: flat_after.mp4
+  authors:
+    - okupyn
+    - gbhat
+    - phenzler
+    - fabianmanhardt
+    - chrirupp
+    - tombari
 - id: cityrag
   title: "CityRAG: Stepping Into a City via Spatially-Grounded Video Generation"
   venue: arXiv, 2026
@@ -51,7 +83,6 @@
   arxiv: 2512.15701
   project_page: https://kylesargent.github.io/vlic
   image: vlic_before.jpg
-  image_mouseover: vlic_after.mp4
   authors:
     - ksargent
     - ruiqigao
