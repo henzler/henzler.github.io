@@ -9,13 +9,13 @@
       locations:
       - location: New York City / San Francisco, USA
       - location: London, UK
-      description: Generative 3D modeling
+      description: Generative 3D Modeling
 - company: Adobe Research
   roles:
     - title: Research Intern
       dates: "2021"
       location: London, UK
-      description: Texture/Material modeling
+      description: Texture/Material Modeling
 - company: Meta AI
   roles:
     - title: Research Intern
