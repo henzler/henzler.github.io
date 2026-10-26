@@ -16,23 +16,9 @@
     - ageiger
     - tombari
     - michaelniemeyer
-- id: flat
-  title: "FLAT: Feedforward Latent Triangle Splatting for Geometrically Accurate Scene Generation"
-  venue: arXiv, 2026
-  arxiv: 2606.24876
-  project_page: https://flat-splat.github.io/
-  image: flat_before.jpg
-  image_mouseover: flat_after.mp4
-  authors:
-    - okupyn
-    - gbhat
-    - phenzler
-    - fabianmanhardt
-    - chrirupp
-    - tombari
 - id: cityrag
   title: "CityRAG: Stepping Into a City via Spatially-Grounded Video Generation"
-  venue: arXiv, 2026
+  venue: NeurIPS, 2026
   arxiv: 2604.19741
   project_page: https://cityrag.github.io/
   image: cityrag_before.png
@@ -47,6 +33,8 @@
     - jasonyzhang
     - snavely
     - phenzler
+  awards:
+    - "Spotlight"
 - id: ufo4d
   title: "UFO-4D: Unposed Feedforward 4D Reconstruction from Two Images"
   venue: ICLR, 2026
@@ -92,6 +80,31 @@
     - lifei
     - jiajunwu
     - jasonyzhang
+- id: gen2physics
+  title: "Gen2Physics: Grounding Generated 3D Meshes in Physics via Multi-View Material Decomposition"
+  venue: arXiv, 2026
+  arxiv: 2608.23869
+  image: gen2physics_before.png
+  authors:
+    - maurocomi
+    - jordiserranoberbel
+    - kmaninis
+    - phenzler
+    - manuelsanchez
+- id: flat
+  title: "FLAT: Feedforward Latent Triangle Splatting for Geometrically Accurate Scene Generation"
+  venue: arXiv, 2026
+  arxiv: 2606.24876
+  project_page: https://flat-splat.github.io/
+  image: flat_before.jpg
+  image_mouseover: flat_after.mp4
+  authors:
+    - okupyn
+    - gbhat
+    - phenzler
+    - fabianmanhardt
+    - chrirupp
+    - tombari
 - id: rogr
   title: "ROGR: Relightable 3D Objects Using Generative Relighting"
   venue: NeurIPS, 2025

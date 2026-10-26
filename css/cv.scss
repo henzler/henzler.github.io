@@ -35,6 +35,36 @@ body {
     margin-bottom: 0 !important;
 }
 
+// .cv-subrow marks a nested row (e.g. a role under a company) that should
+// sit further right than its parent row, on every screen size.
+.content .columns.cv-subrow {
+    padding-left: 0.5rem;
+}
+
+// Indent section content relative to headings, desktop/tablet only.
+@media screen and (min-width: 769px) {
+    .content .columns {
+        padding-left: 0.75rem;
+    }
+
+    .content .columns.cv-subrow {
+        padding-left: 2.25rem;
+    }
+}
+
+// Keep headings glued to what follows them, and keep multi-row entries
+// (e.g. a job with its roles, a talk with its venues) from splitting
+// across a PDF page break.
+h4.title {
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+.cv-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
 // // Styles for browser native print (better quality)
 // @media print {
 //     // Remove default print styles and artifacts

@@ -18,8 +18,8 @@ function exportCVPDF(element) {
             // compress: false,
             // hotfixes: ['px_scaling']
         },
-        pagebreak: { 
-            mode: ['avoid-all'],
+        pagebreak: {
+            mode: ['avoid-all', 'css'],
         }
     };
     html2pdf().set(opt).from(element).save();

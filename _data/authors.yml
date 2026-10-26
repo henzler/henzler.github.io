@@ -11,6 +11,8 @@ atrevithick:
   first_name: Alex
   last_name: Trevithick
   website: https://alextrevithick.github.io/simvs/
+  mentored: true
+  affiliation: UC San Diego
 avedaldi:
   first_name: Andrea
   last_name: Vedaldi
@@ -52,6 +54,8 @@ halzayer:
   first_name: Hadi
   last_name: Alzayer
   website: https://hadizayer.github.io/
+  mentored: true
+  affiliation: University of Maryland
 holynski:
   first_name: Aleksander
   last_name: Holynski
@@ -92,6 +96,8 @@ nkali:
   first_name: Nikolai
   last_name: Kalischeck
   website: https://www.linkedin.com/in/nikolai-kalischek/
+  mentored: true
+  affiliation: ETH Zurich
 nmitra:
   first_name: Niloy
   middle_name: J.
@@ -142,6 +148,8 @@ ruojincai:
   first_name: Ruojin
   last_name: Cai
   website: https://www.cs.cornell.edu/~ruojin/
+  mentored: true
+  affiliation: Cornell University
 rshapovalov:
  first_name: Roman
  last_name: Shapovalov
@@ -158,6 +166,8 @@ stanszy:
   first_name: Stanislaw
   last_name: Szymanowicz
   website: https://szymanowiczs.github.io/
+  mentored: true
+  affiliation: University of Oxford
 tombari:
   first_name: Federico
   last_name: Tombari
@@ -191,6 +201,8 @@ xiaomingzhao:
   first_name: Xiaoming
   last_name: Zhao
   website: https://xiaoming-zhao.com/
+  mentored: true
+  affiliation: University of Illinois Urbana-Champaign
 zhengqili:
   first_name: Zhengqi
   last_name: Li
@@ -215,6 +227,8 @@ genechou:
   first_name: Gene
   last_name: Chou
   website: https://genechou.com/
+  mentored: true
+  affiliation: Cornell University
 jhur:
   first_name: Junhwa
   last_name: Hur
@@ -227,10 +241,14 @@ jtang:
   first_name: Jiapeng
   last_name: Tang
   website: https://tangjiapeng.github.io/
+  mentored: true
+  affiliation: Technical University of Munich
 ksargent:
   first_name: Kyle
   last_name: Sargent
   website: https://kylesargent.github.io/
+  mentored: true
+  affiliation: Stanford University
 kylegenova:
   first_name: Kyle
   last_name: Genova
@@ -267,6 +285,8 @@ xxing:
   first_name: Xiaoyan
   last_name: Xing
   website: https://xyxingx.github.io/
+  mentored: true
+  affiliation: University of Amsterdam
 zeyuma:
   first_name: Zeyu
   last_name: Ma
@@ -287,6 +307,8 @@ haofeixu:
   first_name: Haofei
   last_name: Xu
   website: https://haofeixu.github.io/
+  mentored: true
+  affiliation: ETH Zurich
 michaelniemeyer:
   first_name: Michael
   last_name: Niemeyer
@@ -295,9 +317,36 @@ okupyn:
   first_name: Orest
   last_name: Kupyn
   website: https://scholar.google.com/citations?user=KoC7bP4AAAAJ&hl=en
+  mentored: true
+  affiliation: University of Oxford
 pollefeys:
   first_name: Marc
   last_name: Pollefeys
   website: https://people.inf.ethz.ch/marc.pollefeys/
+maurocomi:
+  first_name: Mauro
+  last_name: Comi
+  website: https://maurocomi.com/
+  mentored: true
+  affiliation: University of Bristol
+  mentored_year: 2026
+demiantill:
+  first_name: Demian
+  last_name: Till
+  website: https://www.cambridgeconsultants.com/author/demian-till/
+  mentored: true
+  affiliation: University College London
+  mentored_year: 2021
+jordiserranoberbel:
+  first_name: Jordi
+  last_name: Serrano Berbel
+  website: https://www.linkedin.com/in/sawass?originalSubdomain=de
+kmaninis:
+  first_name: Kevis-Kokitsi
+  last_name: Maninis
+  website: https://kmaninis.com/
+manuelsanchez:
+  first_name: Manuel
+  last_name: Sanchez
 
 

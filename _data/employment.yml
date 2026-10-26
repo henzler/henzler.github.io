@@ -1,34 +1,30 @@
 - company: Google
-  fa-icon: google
   roles:
     - title: Senior Research Scientist
-      dates: "Nov 2024 - Present"
-      location: San Francisco, USA
-      description: Generative AI, Veo / Gemini Omni
+      dates: "2024 - Present"
+      location: New York City / San Francisco, USA
+      description: Agents, World/Video Models
     - title: Research Scientist
-      dates: "Sep 2022 - Nov 2024"
+      dates: "2022 - 2024"
       locations:
-      - location: San Francisco, USA 
+      - location: New York City / San Francisco, USA
       - location: London, UK
       description: Generative 3D modeling
 - company: Adobe Research
-  fa-icon: adobe
   roles:
     - title: Research Intern
-      dates: "Jun 2021 - Dec 2021"
+      dates: "2021"
       location: London, UK
       description: Texture/Material modeling
 - company: Meta AI
-  fa-icon: meta
   roles:
     - title: Research Intern
-      dates: "Jun 2020 - Sep 2020"
+      dates: "2020"
       location: London, UK
       description: 3D Reconstruction
 - company: Robert Bosch GmbH / Ulm University
-  fa-icon: bosch
   roles:
     - title: Research Assistant
-      dates: "Nov 2017 - Apr 2018"
+      dates: "2017 - 2018"
       location: Ulm, GER
       description: Autonomous Driving
