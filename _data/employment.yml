@@ -7,7 +7,7 @@
   bullets:
     - "Core contributor to Gemini Omni pre-training – co-designed multi-modal reference conditioning, built an agentic data-annotation harness, POC for an end-to-end vertical, run-captained large-scale experiments."
     - "Core contributor to Veo's reference-to-video capabilities – designed key conditioning components and data mixture critical to achieving state-of-the-art performance."
-    - "End-to-end designed a novel model for grounding Genie in 3D."
+    - "Led the design of a novel model for grounding Genie in 3D; end-to-end from concept to working model."
     - "Published 15 top-venue papers – 1 Oral (top 0.4%), 5 Spotlights/Highlights (top 3%); mentored 15+ interns."
 - company: Google
   title: Research Scientist
