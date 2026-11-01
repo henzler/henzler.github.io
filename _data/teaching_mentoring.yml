@@ -1,0 +1,7 @@
+# CV "Mentoring, Teaching & Invited Talks" section. [mentees] and [talks] are
+# replaced with counts from authors.yml (mentored: true) and invited_talks.yml
+# (every venue counts, panels included). An optional label is shown in bold
+# before the text.
+- text: "Mentored [mentees] student researchers at Google and UCL; work published across top academic conferences."
+- text: "UCL Teaching Assistant – Computer Graphics <span class=\"is-size-7\">(COMP0027)</span>, Machine Vision <span class=\"is-size-7\">(COMP0137)</span>, Machine Learning <span class=\"is-size-7\">(COMP0088)</span>."
+- text: "[talks] invited talks at universities, research labs, and academic conferences; panelist at NYC Tech Week."

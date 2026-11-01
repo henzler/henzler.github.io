@@ -1,3 +1,12 @@
+- id: genie
+  title: Genie
+  product_name: Flow
+  project_page: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+  date: 2026
+  image: genie_before.jpg
+  image_mouseover: genie_after.mp4
+  description: "Google DeepMind's real-time interactive world model."
+  team: genie_team
 - id: omni
   title: Gemini Omni
   product_name: Gemini / Flow

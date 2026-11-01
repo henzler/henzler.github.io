@@ -187,6 +187,9 @@ vdeschaintre:
 veo_team:
   first_name: Veo team and collaborators at Google DeepMind
   website: https://deepmind.google/models/veo/
+genie_team:
+  first_name: Google DeepMind and collaborators
+  website: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
 omni_team:
   first_name: Omni team and collaborators at Google DeepMind
   website: https://gemini.google/overview/video-generation/

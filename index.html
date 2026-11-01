@@ -139,7 +139,7 @@ layout: null
     </div>
   </section>
 
-  <section class="section content-section" id="research-section">
+  <section class="section content-section pb-0" id="research-section">
     <div class="container is-max-desktop">
       <h3 class="title is-3">Research</h3>
 
@@ -214,6 +214,64 @@ layout: null
         </div>
       </div>
       {% endfor %}
+    </div>
+  </section>
+
+  <section class="section content-section pb-0" id="talks-section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-3">Invited Talks & Panels</h3>
+      <div class="content">
+        {% for talk in site.data.invited_talks %}
+        <div class="mb-4">
+          <h3 class="has-text-weight-semibold is-size-5 has-text-dark mb-2">{{ talk.title }}</h3>
+          {% for venue in talk.venues %}
+          <div style="display: flex; justify-content: space-between; gap: 1rem; line-height: 1.6;">
+            <span>{{ venue.venue }}</span>
+            <span class="has-text-grey" style="white-space: nowrap;">{{ venue.date }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section content-section" id="mentoring-section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-3">Mentored Students and Interns</h3>
+      <div class="content">
+        {% assign mentee_entries = "" | split: "," %}
+        {% for author_entry in site.data.authors %}
+          {% assign author_id = author_entry[0] %}
+          {% assign author = author_entry[1] %}
+          {% if author.mentored %}
+          {% assign pub_refs = "" | split: "," %}
+          {% assign sort_year = "" %}
+          {% for publication in site.data.publications %}
+            {% assign first_author = publication.authors | first %}
+            {% if first_author == author_id %}
+              {% assign venue_parts = publication.venue | split: ", " %}
+              {% assign pub_year = venue_parts | last %}
+              {% assign pub_refs = pub_refs | push: publication.venue %}
+              {% if sort_year == "" %}{% assign sort_year = pub_year %}{% endif %}
+            {% endif %}
+          {% endfor %}
+          {% if sort_year == "" and author.mentored_year %}{% assign sort_year = author.mentored_year %}{% endif %}
+          {% capture refs_text %}{% if pub_refs.size > 0 %}{{ pub_refs | join: "; " }}{% elsif author.mentored_year %}{{ author.mentored_year }}{% endif %}{% endcapture %}
+          {% capture mentee_name %}<a href="{{ author.website }}">{{ author.first_name }} {{ author.last_name }}</a>{% if author.affiliation %} ({{ author.affiliation }}){% endif %}{% endcapture %}
+          {% capture mentee_entry %}{{ sort_year }}|{{ mentee_name | strip }}|{{ refs_text | strip }}{% endcapture %}
+          {% assign mentee_entries = mentee_entries | push: mentee_entry %}
+          {% endif %}
+        {% endfor %}
+        {% assign sorted_mentees = mentee_entries | sort | reverse %}
+        {% for mentee_entry in sorted_mentees %}
+          {% assign mentee_parts = mentee_entry | split: "|" %}
+          <div style="display: flex; justify-content: space-between; gap: 1rem; line-height: 1.6;">
+            <span>{{ mentee_parts[1] }}</span>
+            <span class="has-text-grey" style="white-space: nowrap;">{{ mentee_parts[2] }}</span>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </section>
 

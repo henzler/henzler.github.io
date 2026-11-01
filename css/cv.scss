@@ -22,6 +22,28 @@ body {
     overflow: visible;
 }
 
+// Centered CV header; the download button floats top-right (desktop only).
+.cv-header {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.cv-header .title {
+    margin-bottom: 0.5rem;
+}
+
+.cv-download {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cv-contact a {
+    display: inline-block;
+    margin: 0 0.6rem;
+    white-space: nowrap;
+}
+
 .portrait-column {
     padding: 0;
 }
@@ -41,15 +63,33 @@ body {
     padding-left: 0.5rem;
 }
 
-// Indent section content relative to headings, desktop/tablet only.
+// Section entries sit flush with their headings; only sub-rows indent.
 @media screen and (min-width: 769px) {
-    .content .columns {
-        padding-left: 0.75rem;
-    }
-
     .content .columns.cv-subrow {
-        padding-left: 2.25rem;
+        padding-left: 1.5rem;
     }
+}
+
+// Bullet list used for employment highlights.
+// Selector needs to out-specify Bulma's ".content ul" typography rule.
+.content ul.cv-bullets {
+    margin: 0;
+    padding-left: 1.1em;
+}
+
+.cv-bullets li {
+    margin-bottom: 0.1rem;
+    line-height: 1.35;
+}
+
+.cv-bullets li:last-child {
+    margin-bottom: 0;
+}
+
+// Publication numbers: smaller than the title, nudged down to share its baseline.
+.cv-pub-number {
+    font-size: 0.85em;
+    padding-top: calc(0.75rem + 0.1em);
 }
 
 // Keep headings glued to what follows them, and keep multi-row entries
@@ -63,6 +103,58 @@ h4.title {
 .cv-item {
     page-break-inside: avoid;
     break-inside: avoid;
+}
+
+// Section headings in small caps style: uppercase with light tracking.
+#cv-content h4.title {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+// Compact typography for the "Download CV" PDF. html2pdf lays the page out
+// at A4 width (~794px), so 1px ≈ 0.75pt; cv.js toggles this class during
+// export. Bulma sizes are rem-based, so scaling the root shrinks text and
+// spacing together (13.33px ≈ 10pt body text).
+html.pdf-export {
+    font-size: 13.33px;
+
+    // Charter where installed (macOS); Charis SIL is a Charter-based
+    // fallback loaded from Google Fonts so the PDF looks the same anywhere.
+    body {
+        font-family: "Charter", "Bitstream Charter", "Charis SIL", serif;
+        line-height: 1.4;
+    }
+
+    // Page margins come from jsPDF (js/cv.js), so drop the on-screen ones.
+    #cv-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cv-bullets li {
+        line-height: 1.25;
+    }
+
+    // Tighter list indentation than on screen.
+    .content .columns.cv-subrow {
+        padding-left: 0.5rem;
+    }
+
+    .content ul.cv-bullets {
+        padding-left: 0.9em;
+    }
+
+    .title.is-1 {
+        font-size: 2rem;     // name, ≈ 20pt
+    }
+
+    .subtitle.is-4 {
+        font-size: 1.2rem;   // position, ≈ 12pt
+    }
+
+    h4.title.is-4 {
+        font-size: 1.2rem;   // section headings, ≈ 12pt
+    }
 }
 
 // // Styles for browser native print (better quality)

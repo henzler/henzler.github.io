@@ -2,6 +2,7 @@
   venues:
     - venue: "NYC Tech Week"
       date: "June 2026"
+      type: panel
 - title: "Generative 3D Content Creation"
   venues:
     - venue: "GenRecon3D Workshop, CVPR 2026"

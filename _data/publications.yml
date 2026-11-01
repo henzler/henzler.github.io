@@ -17,6 +17,7 @@
     - tombari
     - michaelniemeyer
 - id: cityrag
+  selected: true
   title: "CityRAG: Stepping Into a City via Spatially-Grounded Video Generation"
   venue: NeurIPS, 2026
   arxiv: 2604.19741
@@ -51,6 +52,7 @@
     - tzickler
     - deqingsun
 - id: gr3en
+  selected: true
   title: "GR3EN: Generative Relighting for 3D Environments"
   venue: SIGGRAPH, 2026
   arxiv: 2601.16272
@@ -66,6 +68,7 @@
     - pratuls
     - dorverbin
 - id: vlic
+  selected: true
   title: "VLIC: Vision-Language Models As Perceptual Judges for Human-Aligned Image Compression"
   venue: CVPR, 2026
   arxiv: 2512.15701
@@ -81,6 +84,7 @@
     - jiajunwu
     - jasonyzhang
 - id: gen2physics
+  selected: true
   title: "Gen2Physics: Grounding Generated 3D Meshes in Physics via Multi-View Material Decomposition"
   venue: arXiv, 2026
   arxiv: 2608.23869
@@ -122,8 +126,9 @@
     - pratuls
     - phenzler
   awards:
-    - "Spotlight"
+    - "Spotlight (top 3.2%)"
 - id: bolt3d
+  selected: true
   title: "Bolt3D: Generating 3D Scenes in Seconds"
   venue: ICCV, 2025
   arxiv: 2503.14445
@@ -141,6 +146,7 @@
     - barron
     - phenzler
 - id: cubediff
+  selected: true
   title: "CubeDiff: Repurposing Diffusion-Based Image Models for Panorama Generation"
   venue: ICLR, 2025
   project_page: https://cubediff.github.io/
@@ -155,8 +161,9 @@
     - konradschindler
     - tombari
   awards:
-    - "Spotlight"
+    - "Spotlight (top 3.3%)"
 - id: generative-relighting
+  selected: true
   title: Generative Multiview Relighting for 3D Reconstruction under Extreme Illumination Variation
   venue: CVPR, 2025
   project_page: https://relight-to-reconstruct.github.io/
@@ -171,8 +178,9 @@
     - pratuls
     - dorverbin
   awards:
-    - "Highlight"
+    - "Highlight (top 3%)"
 - id: interpose
+  selected: true
   title: Can Generative Video Models Help Pose Estimation?
   venue: CVPR, 2025
   project_page: https://inter-pose.github.io/
@@ -187,7 +195,7 @@
     - snavely
     - rmbrualla
   awards:
-    - "Highlight"
+    - "Highlight (top 3%)"
 - id: simvs
   title: "SimVS: Simulating World Inconsistencies for Robust View Synthesis"
   venue: CVPR, 2025
@@ -209,6 +217,7 @@
     - raviramamoorthi
     - pratuls
 - id: illuminerf
+  selected: true
   title: "IllumiNeRF: 3D Relighting without Inverse Rendering"
   venue: NeurIPS, 2024
   project_page: https://illuminerf.github.io
@@ -223,6 +232,7 @@
     - rmbrualla
     - phenzler
 - id: cat3d
+  selected: true
   title: "CAT3D: Create Anything in 3D with Multi-View Diffusion Models"
   venue: NeurIPS, 2024
   project_page: https://cat3d.github.io
@@ -239,7 +249,7 @@
     - barron
     - pooleb
   awards:
-    - "Oral"
+    - "Oral (top 0.4%)"
 - id: reconfusion
   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
   venue: CVPR, 2024
@@ -280,10 +290,11 @@
   venue: University College London (UCL), PhD thesis, 2023
   project_page: "https://discovery.ucl.ac.uk/id/eprint/10169117/"
   image: thesis.jpg
-  awards: Eurographics PhD Thesis Award
+  awards: Eurographics Best PhD Thesis Award
   authors:
     - phenzler
 - id: co3d
+  selected: true
   title: "Common Objects in 3D: Large-Scale Learning and Evaluation of Real-life 3D Category Reconstruction"
   venue: ICCV 2021
   project_page: "https://ai.meta.com/datasets/CO3D-dataset/"
@@ -292,7 +303,7 @@
   pdf: https://openaccess.thecvf.com/content/ICCV2021/papers/Reizenstein_Common_Objects_in_3D_Large-Scale_Learning_and_Evaluation_of_Real-Life_ICCV_2021_paper.pdf
   github: facebookresearch/co3d
   image: co3d.jpg
-  awards: Oral, Best Paper Honorable Mention
+  awards: Oral (top 3.4%), Best Paper Honorable Mention (top 0.25%)
   authors:
     - jreizenstein
     - rshapovalov
@@ -301,6 +312,7 @@
     - plabatut
     - dnovotny
 - id: neuralmaterial
+  selected: true
   title: "Generative Modelling of BRDF Textures from Flash Images"
   venue: SIGGRAPH ASIA 2021
   project_page: https://henzler.github.io/neuralmaterials
@@ -315,6 +327,7 @@
     - nmitra
     - tritschel
 - id: unsupervisedvideos
+  selected: true
   title: "Unsupervised Learning of 3D Object Categories from Videos in the Wild"
   venue: CVPR 2021
   project_page: https://henzler.github.io/unsupervised-videos
@@ -330,6 +343,7 @@
     - avedaldi
     - dnovotny
 - id: neuraltexture
+  selected: true
   title: "Learning a Neural 3D Texture Space from 2D Exemplars"
   venue: CVPR 2020
   pdf: https://openaccess.thecvf.com/content_CVPR_2020/papers/Henzler_Learning_a_Neural_3D_Texture_Space_From_2D_Exemplars_CVPR_2020_paper.pdf
@@ -343,6 +357,7 @@
     - nmitra
     - tritschel  
 - id: platonicgan
+  selected: true
   title: "Escaping Plato's Cave: 3D Shape From Adversarial Rendering"
   venue: ICCV 2019
   pdf: https://openaccess.thecvf.com/content_ICCV_2019/papers/Henzler_Escaping_Platos_Cave_3D_Shape_From_Adversarial_Rendering_ICCV_2019_paper.pdf
@@ -375,6 +390,7 @@
     - mbach
     - kdietmayer
 - id: tomography
+  selected: true
   title: "Single-Image Tomography: 3D Volumes from 2D Cranial X-Rays"
   venue: Eurographics 2018
   pdf: https://www.uni-ulm.de/fileadmin/website_uni_ulm/iui.inst.100/institut/Papers/viscom/2018/henzler18tomography_eg.pdf

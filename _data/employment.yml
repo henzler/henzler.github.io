@@ -1,30 +1,42 @@
 - company: Google
-  roles:
-    - title: Senior Research Scientist
-      dates: "2024 - Present"
-      location: New York City / San Francisco, USA
-      description: Agents, World/Video Models
-    - title: Research Scientist
-      dates: "2022 - 2024"
-      locations:
-      - location: New York City / San Francisco, USA
-      - location: London, UK
-      description: Generative 3D Modeling
+  title: Senior Research Scientist
+  dates: "2024 - Present"
+  locations:
+    - location: San Francisco, USA
+    - location: New York, USA
+  bullets:
+    - "Core contributor to Gemini Omni pre-training – co-designed multi-modal reference conditioning, built an agentic data-annotation harness, POC for an end-to-end vertical, run-captained large-scale experiments."
+    - "Core contributor to Veo's reference-to-video capabilities – designed key conditioning components and data mixture critical to achieving state-of-the-art performance."
+    - "End-to-end designed a novel model for grounding Genie in 3D."
+    - "Published 15 top-venue papers – 1 Oral (top 0.4%), 5 Spotlights/Highlights (top 3%); mentored 15+ interns."
+- company: Google
+  title: Research Scientist
+  dates: "2022 - 2024"
+  locations:
+    - location: San Francisco, USA
+    - location: London, UK
+  bullets:
+    - "Led the first reference-to-video Veo model design and view-conditioned diffusion research, turning as few as one product photo into an interactive 3D experience – on Google Search for 1M+ products / billions of impressions."
+    - "Built and scaled a distributed synthetic-data rendering pipeline that renders 1K frames per second."
 - company: Adobe Research
-  roles:
-    - title: Research Intern
-      dates: "2021"
-      location: London, UK
-      description: Texture/Material Modeling
+  title: Research Intern
+  dates: "2021"
+  locations:
+    - location: London, UK
+  bullets:
+    - "Researched generative texture & material modeling for 3D assets, advised by Milos Hasan and Kalyan Sunkavalli."
 - company: Meta AI
-  roles:
-    - title: Research Intern
-      dates: "2020"
-      location: London, UK
-      description: 3D Reconstruction
+  title: Research Intern
+  dates: "2020"
+  locations:
+    - location: London, UK
+  bullets:
+    - 'Researched few-shot 3D reconstruction from videos, advised by <a href="https://d-novotny.github.io/">David Novotny</a> and <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a>; code integrated into Meta''s internal PyTorch3D.'
+    - "Published 2 papers, including an ICCV Best Paper Honorable Mention (top 0.25% of accepted papers)."
 - company: Robert Bosch GmbH / Ulm University
-  roles:
-    - title: Research Assistant
-      dates: "2017 - 2018"
-      location: Ulm, GER
-      description: Autonomous Driving
+  title: Research Assistant
+  dates: "2017 - 2018"
+  locations:
+    - location: Ulm, GER
+  bullets:
+    - "Co-authored two publications on object detection and tracking for autonomous driving."
